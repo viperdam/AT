@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Star pattern drawn using random dots of different sizes -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            
+            <!-- Small stars -->
+            <stroke
+                android:width="1dp"
+                android:color="#44FFFFFF"
+                android:dashWidth="1dp"
+                android:dashGap="20dp" />
+        </shape>
+    </item>
+    
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            
+            <!-- Medium stars -->
+            <stroke
+                android:width="1.5dp"
+                android:color="#66FFFFFF"
+                android:dashWidth="2dp"
+                android:dashGap="50dp" />
+        </shape>
+    </item>
+    
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            
+            <!-- Large stars -->
+            <stroke
+                android:width="2dp"
+                android:color="#88FFFFFF"
+                android:dashWidth="3dp"
+                android:dashGap="120dp" />
+        </shape>
+    </item>
+</layer-list>

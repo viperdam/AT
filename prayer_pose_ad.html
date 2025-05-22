@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhan Time - Prayer Pose Detection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: linear-gradient(135deg, #4E2C8C, #7749CF, #9E8CF1);
+            font-family: Arial, sans-serif;
+            touch-action: manipulation;
+            user-select: none;
+        }
+        #ad-container {
+            position: relative;
+            width: 300px;
+            height: 250px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        #ad-label {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            font-size: 10px;
+            padding: 2px 5px;
+            border-radius: 3px;
+            z-index: 100;
+        }
+        #app-icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: #FF9D3F;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+        }
+        #icon-symbol {
+            width: 20px;
+            height: 20px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,4v7c0,0.55-0.45,1-1,1h-3V2h3C18.55,2,19,2.45,19,4z M10,2v9h-3c-0.55,0-1-0.45-1-1V4c0-1.55,0.45-2,1-2H10z M5,20 c0,0.55,0.45,1,1,1h3v-9H6c-0.55,0-1,0.45-1,1V20z M13,12h3c0.55,0,1,0.45,1,1v7c0,0.55-0.45,1-1,1h-3V12z" fill="white"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #background-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.3;
+        }
+        #stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: twinkle 4s infinite;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.7; }
+        }
+        #headline {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        #pose-container {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 120px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .pose {
+            width: 50px;
+            height: 90px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.7;
+            cursor: pointer;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        .pose:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        .pose.active {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        .pose-name {
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            opacity: 0.8;
+        }
+        #pose1 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 180"><path d="M50,30 C60,30 70,20 70,10 C70,0 60,-10 50,-10 C40,-10 30,0 30,10 C30,20 40,30 50,30 Z" fill="%23FFD166" transform="translate(0,20)"/><path d="M50,40 L50,120 M30,50 L70,50 M40,140 L50,120 L60,140" stroke="%23FFD166" stroke-width="10" stroke-linecap="round" fill="none" transform="translate(0,20)"/></svg>');
+        }
+        #pose2 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 180"><path d="M50,30 C60,30 70,20 70,10 C70,0 60,-10 50,-10 C40,-10 30,0 30,10 C30,20 40,30 50,30 Z" fill="%23FFD166" transform="translate(0,20)"/><path d="M50,40 L50,80 M30,50 L70,50 M30,70 L70,70 M30,100 C30,100 50,130 50,140 C50,150 50,150 50,150 L50,150" stroke="%23FFD166" stroke-width="10" stroke-linecap="round" fill="none" transform="translate(0,20)"/></svg>');
+        }
+        #pose3 {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 180"><path d="M50,30 C60,30 70,20 70,10 C70,0 60,-10 50,-10 C40,-10 30,0 30,10 C30,20 40,30 50,30 Z" fill="%23FFD166" transform="translate(0,20)"/><path d="M50,40 L50,70 M40,80 L60,80 M50,70 L50,100 M20,110 L80,110" stroke="%23FFD166" stroke-width="10" stroke-linecap="round" fill="none" transform="translate(0,20)"/></svg>');
+        }
+        #camera-interface {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 150px;
+            border: 3px solid #FF9D3F;
+            border-radius: 10px;
+            overflow: hidden;
+            display: none;
+        }
+        #camera-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        #camera-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
+                             linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        #camera-target {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            border: 2px dashed rgba(255, 157, 63, 0.7);
+            border-radius: 5px;
+        }
+        #camera-controls {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            display: flex;
+        }
+        .camera-button {
+            width: 24px;
+            height: 24px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        #camera-icon {
+            width: 14px;
+            height: 14px;
+            background-color: white;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+        }
+        #feedback {
+            position: absolute;
+            bottom: 55px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+        #detector-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #detection-animation {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(255, 157, 63, 0.3);
+            border-top: 5px solid #FF9D3F;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        #detection-text {
+            margin-top: 10px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #success-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .success-star {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="%23FFD166"/></svg>');
+            opacity: 0;
+        }
+        #cta-button {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #FF9D3F;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 8px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+            opacity: 0.9;
+            transition: all 0.3s;
+        }
+        #cta-button:hover {
+            opacity: 1;
+            transform: translateX(-50%) scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        #cta-button:active {
+            transform: translateX(-50%) scale(0.95);
+        }
+        #instructions {
+            position: absolute;
+            top: 175px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: rgba(78, 44, 140, 0.6);
+            padding: 5px 10px;
+            border-radius: 10px;
+            pointer-events: none;
+            opacity: 0.9;
+            white-space: nowrap;
+        }
+        #demo-indicator {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            color: rgba(255,255,255,0.7);
+            text-align: center;
+            width: 150px;
+        }
+        #prayer-mat {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            width: 50px;
+            height: 50px;
+            opacity: 0.6;
+            pointer-events: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="10" y="20" width="80" height="60" rx="2" fill="%23FF9D3F" opacity="0.8"/><rect x="20" y="30" width="60" height="40" fill="%234E2C8C" opacity="0.6"/><path d="M50,35 Q65,50 50,65 Q35,50 50,35" fill="%23FFD166" stroke="%23FFD166" stroke-width="1"/><path d="M40,40 L60,40 L60,60 L40,60 Z" stroke="%23FFD166" stroke-width="1" fill="none"/></svg>');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div id="ad-container">
+        <div id="ad-label">ADVERTISEMENT</div>
+        <div id="app-icon">
+            <div id="icon-symbol"></div>
+        </div>
+        <div id="background-pattern"></div>
+        <div id="stars"></div>
+        <div id="headline">Learn Prayer Poses</div>
+        
+        <div id="pose-container">
+            <div id="pose1" class="pose">
+                <div class="pose-name">Qiyam</div>
+            </div>
+            <div id="pose2" class="pose">
+                <div class="pose-name">Ruku</div>
+            </div>
+            <div id="pose3" class="pose">
+                <div class="pose-name">Sujud</div>
+            </div>
+        </div>
+        
+        <div id="camera-interface">
+            <div id="camera-overlay"></div>
+            <div id="camera-grid"></div>
+            <div id="camera-target"></div>
+            <div id="camera-controls">
+                <div class="camera-button"><div id="camera-icon"></div></div>
+            </div>
+            <div id="detector-overlay">
+                <div id="detection-animation"></div>
+                <div id="detection-text">Detecting pose...</div>
+            </div>
+        </div>
+        
+        <div id="instructions">Tap a pose to see how it works</div>
+        <div id="feedback">Practice prayer poses</div>
+        <div id="demo-indicator">Interactive demonstration</div>
+        <button id="cta-button">Install Adhan Time</button>
+        <div id="success-animation"></div>
+        <div id="prayer-mat"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Setup stars
+            const starsContainer = document.getElementById('stars');
+            for (let i = 0; i < 30; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.width = `${Math.random() * 2 + 1}px`;
+                star.style.height = star.style.width;
+                star.style.animationDelay = `${Math.random() * 4}s`;
+                starsContainer.appendChild(star);
+            }
+            
+            const poseElements = document.querySelectorAll('.pose');
+            const feedback = document.getElementById('feedback');
+            const instructions = document.getElementById('instructions');
+            const ctaButton = document.getElementById('cta-button');
+            const successAnimation = document.getElementById('success-animation');
+            const cameraInterface = document.getElementById('camera-interface');
+            const poseContainer = document.getElementById('pose-container');
+            const detectorOverlay = document.getElementById('detector-overlay');
+            
+            let activePose = null;
+            let detectionTimeout = null;
+            
+            // Preload stars for success animation
+            for (let i = 0; i < 15; i++) {
+                const star = document.createElement('div');
+                star.className = 'success-star';
+                star.style.left = `${Math.random() * 100}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                successAnimation.appendChild(star);
+            }
+            
+            poseElements.forEach(pose => {
+                pose.addEventListener('click', function() {
+                    if (pose.classList.contains('active')) return;
+                    
+                    // Reset any active pose
+                    document.querySelectorAll('.pose.active').forEach(p => p.classList.remove('active'));
+                    
+                    // Set this pose as active
+                    pose.classList.add('active');
+                    activePose = pose.id;
+                    
+                    // Show camera interface
+                    poseContainer.style.display = 'none';
+                    cameraInterface.style.display = 'block';
+                    instructions.style.opacity = '0';
+                    
+                    // Show detector overlay after a short delay
+                    setTimeout(() => {
+                        detectorOverlay.style.display = 'flex';
+                        
+                        // Set a timeout to "detect" the pose
+                        detectionTimeout = setTimeout(() => {
+                            detectorOverlay.style.display = 'none';
+                            showSuccess();
+                        }, 2000);
+                    }, 500);
+                    
+                    // Update feedback based on the selected pose
+                    switch(activePose) {
+                        case 'pose1':
+                            feedback.textContent = "Qiyam: Standing position";
+                            break;
+                        case 'pose2':
+                            feedback.textContent = "Ruku: Bowing position";
+                            break;
+                        case 'pose3':
+                            feedback.textContent = "Sujud: Prostration position";
+                            break;
+                    }
+                });
+            });
+            
+            function showSuccess() {
+                feedback.textContent = "Try our interactive pose guide!";
+                feedback.style.color = "#4CAF50";
+                ctaButton.style.opacity = 1;
+                ctaButton.style.backgroundColor = "#4CAF50";
+                
+                // Animate stars
+                const stars = document.querySelectorAll('.success-star');
+                successAnimation.style.opacity = 1;
+                
+                stars.forEach((star, index) => {
+                    setTimeout(() => {
+                        star.style.opacity = 1;
+                        
+                        // Animate each star
+                        const keyframes = [
+                            { transform: 'scale(0) rotate(0deg)', opacity: 0 },
+                            { transform: 'scale(1.5) rotate(180deg)', opacity: 1 },
+                            { transform: 'scale(1) rotate(360deg)', opacity: 0 }
+                        ];
+                        
+                        const timing = {
+                            duration: 1200,
+                            iterations: 1,
+                            delay: index * 100,
+                            fill: 'forwards'
+                        };
+                        
+                        star.animate(keyframes, timing);
+                    }, index * 50);
+                });
+            }
+            
+            // Add click tracking to CTA button
+            ctaButton.addEventListener('click', function() {
+                // In a real implementation, replace this with Google Ads click tracking
+                window.open('https://play.google.com/store/apps/details?id=com.viperdam.kidsprayer', '_blank');
+            });
+        });
+    </script>
+</body>
+</html> 

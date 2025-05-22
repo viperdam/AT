@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_icon_purchase" />
+        <TextView
+            android:textColor="@color/ltgrey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.0dip"
+            android:text="Welcome"
+            android:fontFamily="@font/medium" />
+        <TextView
+            android:textSize="28.0dip"
+            android:textColor="#ff444f50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:text="Islamic Dua"
+            android:fontFamily="@font/kingthings_exeter" />
+        <TextView
+            android:textSize="12.0dip"
+            android:textColor="@color/grey"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:text="When you buy premium you get the \nwhole app ADs free"
+            android:fontFamily="@font/medium" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ads_remove" />
+            <TextView
+                android:textSize="15.0dip"
+                android:textColor="#ffd90d0d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:text="Remove All ADs"
+                android:fontFamily="@font/medium" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@id/lin_pay"
+            android:background="@drawable/round_corner_square_5"
+            android:layout_width="180.0dip"
+            android:layout_height="38.0dip"
+            android:layout_marginTop="25.0dip">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_premium" />
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="Get Premium "
+                android:fontFamily="@font/biko_bold_700" />
+            <ImageView
+                android:layout_width="14.0dip"
+                android:layout_height="14.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:src="@drawable/ic_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/background_gradient2"
+            android:layout_width="fill_parent"
+            android:layout_height="170.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip">
+            <TextView
+                android:textSize="25.0dip"
+                android:textColor="#ffd7fffa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:text="Continue for FREE"
+                android:fontFamily="@font/medium" />
+            <TextView
+                android:textSize="16.0dip"
+                android:textColor="#ff1ca498"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="12.0dip"
+                android:text="Islamic Dua, Quran,\nHajj Journey, Zakat and more."
+                android:fontFamily="@font/medium" />
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:id="@id/lin_start"
+                android:background="@drawable/round_corner_square_5"
+                android:layout_width="110.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="12.0dip"
+                android:paddingStart="10.0dip"
+                android:paddingEnd="10.0dip">
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start Free"
+                    android:layout_weight="1.0"
+                    android:fontFamily="@font/biko_bold_700" />
+                <ImageView
+                    android:layout_width="14.0dip"
+                    android:layout_height="14.0dip"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_marginTop="25.0dip"
+            android:backgroundTint="@color/ltwhite"
+            app:cardCornerRadius="12.0dip"
+            app:cardElevation="0.0dip">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:textSize="15.0dip"
+                    android:textColor="#ff444f50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:text="Please Read Our "
+                    android:fontFamily="@font/medium" />
+                <TextView
+                    android:textSize="15.0dip"
+                    android:textColor="#ff2e77e4"
+                    android:textColorLink="#ff2e77e4"
+                    android:id="@id/txt_privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15.0dip"
+                    android:text="Privacy  Policy"
+                    android:fontFamily="@font/biko_bold_700" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</LinearLayout>

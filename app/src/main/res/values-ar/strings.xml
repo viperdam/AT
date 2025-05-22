@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">وقت الأذان</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">الصلاة القادمة</string>
+    <string name="prayer_remaining">الوقت المتبقي</string>
+    <string name="start_prayer">بدء الصلاة</string>
+    <string name="resume_prayer">استئناف الصلاة</string>
+    <string name="enable_location">تفعيل الموقع</string>
+    <string name="location_disabled">الموقع معطل</string>
+    <string name="using_last_location">استخدام آخر موقع معروف</string>
+    <string name="location_permission_required">إذن الموقع مطلوب لأوقات صلاة دقيقة</string>
+    <string name="enable_location_message">الرجاء تفعيل الموقع للحصول على أوقات صلاة دقيقة</string>
+    <string name="test_lock">اختبار قفل الصلاة</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">مستكشف القبلة</string>
+    <string name="qibla_finder_description">ابحث عن اتجاه القبلة (الكعبة في مكة)</string>
+    <string name="fetching_location">تحديد موقعك…</string>
+    <string name="location_found">الموقع: %1$s، %2$s</string>
+    <string name="location_not_available">الموقع غير متاح</string>
+    <string name="location_error">خطأ في الحصول على الموقع</string>
+    <string name="location_error_message">تعذر تحديد موقعك. يرجى المحاولة مرة أخرى.</string>
+    <string name="enable_location_for_qibla">يرجى تفعيل خدمات الموقع لاستخدام مستكشف القبلة</string>
+    <string name="qibla_angle">اتجاه القبلة: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">الفجر</string>
+    <string name="prayer_dhuhr">الظهر</string>
+    <string name="prayer_asr">العصر</string>
+    <string name="prayer_maghrib">المغرب</string>
+    <string name="prayer_isha">العشاء</string>
+    <string name="rakaat_count">%d ركعة</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">إعدادات اللغة</string>
+    <string name="select_language">اختر اللغة</string>
+    <string name="language_english">الإنجليزية</string>
+    <string name="language_german">الألمانية</string>
+    <string name="language_french">الفرنسية</string>
+    <string name="language_dutch">الهولندية</string>
+    <string name="language_arabic">العربية</string>
+    <string name="language_hindi">الهندية</string>
+    <string name="language_indonesian">الإندونيسية</string>
+    <string name="language_turkish">التركية</string>
+    <string name="language_bengali">البنغالية</string>
+    <string name="language_italian">الإيطالية</string>
+    <string name="language_kannada">الكانادا</string>
+    <string name="language_malay">الملايو</string>
+    <string name="language_malayalam">الماليالام</string>
+    <string name="language_marathi">الماراثي</string>
+    <string name="language_persian">الفارسية</string>
+    <string name="language_punjabi">البنجابية</string>
+    <string name="language_russian">الروسية</string>
+    <string name="language_spanish">الإسبانية</string>
+    <string name="language_tamil">التاميل</string>
+    <string name="language_thai">التايلاندية</string>
+    <string name="language_vietnamese">الفيتنامية</string>
+    <string name="language_restart_required">سيتم إعادة تشغيل التطبيق لتطبيق تغييرات اللغة</string>
+    <string name="selected">محدد</string>
+</resources> 

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">ബാങ്ക് സമയം</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">അടുത്ത നമസ്കാരം</string>
+    <string name="prayer_remaining">ശേഷിക്കുന്ന സമയം</string>
+    <string name="start_prayer">നമസ്കാരം ആരംഭിക്കുക</string>
+    <string name="resume_prayer">നമസ്കാരം തുടരുക</string>
+    <string name="enable_location">ലൊക്കേഷൻ പ്രവർത്തനക്ഷമമാക്കുക</string>
+    <string name="location_disabled">ലൊക്കേഷൻ പ്രവർത്തനരഹിതമാക്കി</string>
+    <string name="using_last_location">അവസാനം അറിയാവുന്ന ലൊക്കേഷൻ ഉപയോഗിക്കുന്നു</string>
+    <string name="location_permission_required">കൃത്യമായ നമസ്കാര സമയങ്ങൾക്ക് ലൊക്കേഷൻ അനുമതി ആവശ്യമാണ്</string>
+    <string name="enable_location_message">കൃത്യമായ നമസ്കാര സമയങ്ങൾക്ക് ദയവായി ലൊക്കേഷൻ പ്രവർത്തനക്ഷമമാക്കുക</string>
+    <string name="test_lock">നമസ്കാര ലോക്ക് പരീക്ഷിക്കുക</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">ഖിബ്‌ല കണ്ടെത്തൽ</string>
+    <string name="qibla_finder_description">ഖിബ്‌ലയുടെ ദിശ കണ്ടെത്തുക (മക്കയിലെ കഅബ)</string>
+    <string name="fetching_location">നിങ്ങളുടെ സ്ഥാനം നിർണ്ണയിക്കുന്നു…</string>
+    <string name="location_found">സ്ഥാനം: %1$s, %2$s</string>
+    <string name="location_not_available">ലൊക്കേഷൻ ലഭ്യമല്ല</string>
+    <string name="location_error">ലൊക്കേഷൻ ലഭിക്കുന്നതിൽ പിശക്</string>
+    <string name="location_error_message">നിങ്ങളുടെ സ്ഥാനം നിർണ്ണയിക്കാനായില്ല. ദയവായി വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="enable_location_for_qibla">ഖിബ്‌ല കണ്ടെത്തൽ ഉപയോഗിക്കാൻ ദയവായി ലൊക്കേഷൻ സേവനങ്ങൾ പ്രവർത്തനക്ഷമമാക്കുക</string>
+    <string name="qibla_angle">ഖിബ്‌ല ദിശ: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">ഫജ്‌ർ</string>
+    <string name="prayer_dhuhr">ദുഹർ</string>
+    <string name="prayer_asr">അസർ</string>
+    <string name="prayer_maghrib">മഗ്രിബ്</string>
+    <string name="prayer_isha">ഇശ</string>
+    <string name="rakaat_count">%d റക്അത്ത്</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">ഭാഷാ ക്രമീകരണങ്ങൾ</string>
+    <string name="select_language">ഭാഷ തിരഞ്ഞെടുക്കുക</string>
+    <string name="language_english">ഇംഗ്ലീഷ്</string>
+    <string name="language_german">ജർമ്മൻ</string>
+    <string name="language_french">ഫ്രഞ്ച്</string>
+    <string name="language_dutch">ഡച്ച്</string>
+    <string name="language_arabic">അറബിക്</string>
+    <string name="language_hindi">ഹിന്ദി</string>
+    <string name="language_indonesian">ഇന്തോനേഷ്യൻ</string>
+    <string name="language_turkish">ടർക്കിഷ്</string>
+    <string name="language_bengali">ബംഗാളി</string>
+    <string name="language_italian">ഇറ്റാലിയൻ</string>
+    <string name="language_kannada">കന്നഡ</string>
+    <string name="language_malay">മലായ്</string>
+    <string name="language_malayalam">മലയാളം</string>
+    <string name="language_marathi">മറാഠി</string>
+    <string name="language_persian">പേർഷ്യൻ</string>
+    <string name="language_punjabi">പഞ്ചാബി</string>
+    <string name="language_russian">റഷ്യൻ</string>
+    <string name="language_spanish">സ്പാനിഷ്</string>
+    <string name="language_tamil">തമിഴ്</string>
+    <string name="language_thai">തായ്</string>
+    <string name="language_vietnamese">വിയറ്റ്നാമീസ്</string>
+    <string name="language_restart_required">ഭാഷാ മാറ്റങ്ങൾ പ്രയോഗിക്കാൻ ആപ്പ് പുനരാരംഭിക്കും</string>
+    <string name="selected">തിരഞ്ഞെടുത്തു</string>
+</resources> 

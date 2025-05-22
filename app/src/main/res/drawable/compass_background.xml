@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Outer circle -->
+    <path
+        android:fillColor="#30FFFFFF"
+        android:pathData="M120,120 m-120,0 a120,120 0,1 1,240 0 a120,120 0,1 1,-240 0" />
+
+    <!-- Inner circle -->
+    <path
+        android:fillColor="#50FFFFFF"
+        android:pathData="M120,120 m-100,0 a100,100 0,1 1,200 0 a100,100 0,1 1,-200 0" />
+        
+    <!-- Intermediate circle -->
+    <path
+        android:fillColor="#00FFFFFF"
+        android:strokeColor="#40FFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M120,120 m-80,0 a80,80 0,1 1,160 0 a80,80 0,1 1,-160 0" />
+
+    <!-- North indicator - more prominent -->
+    <path
+        android:fillColor="#FF5252"
+        android:pathData="M120,10 L128,30 L112,30 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M117,30 L123,30 L123,40 L117,40 Z" />
+    
+    <!-- "N" label - make more prominent -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M118,45 L118,55 L122,55 L122,50 L118,50 M122,45 L122,55" />
+        
+    <!-- Add "N" text label -->
+    <path
+        android:fillColor="#FF5252"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M115,63 L125,63 C125,63 120,68 120,68 C120,68 115,63 115,63" />
+    <path 
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M117,57 L123,57 L123,63" />
+
+    <!-- South indicator -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,230 L128,210 L112,210 Z" />
+    
+    <!-- "S" label - make more prominent -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M118,185 L122,185 L122,190 L118,190 L118,195 L122,195 M118,185 C116,185 116,190 118,190" />
+        
+    <!-- Add "S" text label -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M117,177 L123,177 M117,177 L117,180 L123,180 M123,180 L123,183 L117,183" />
+
+    <!-- East indicator -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M230,120 L210,128 L210,112 Z" />
+    
+    <!-- "E" label - make more prominent -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M185,117 L185,123 L190,123 M185,117 L190,117 M185,120 L188,120 M185,123 L190,123" />
+        
+    <!-- Add "E" text label -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M177,117 L177,123 M177,117 L183,117 M177,120 L181,120 M177,123 L183,123" />
+
+    <!-- West indicator -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,120 L30,128 L30,112 Z" />
+    
+    <!-- "W" label - make more prominent -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,117 L48,123 L50,117 L52,123 L54,117" />
+        
+    <!-- Add "W" text label -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M57,117 L60,123 L62,120 L64,123 L67,117" />
+
+    <!-- Degree markings for every 30 degrees -->
+    <!-- 0 / 360 degrees (North) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M120,20 L120,40" />
+    
+    <!-- 30 degrees -->
+    <path
+        android:strokeColor="#AAFFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M170,35 L160,50" />
+    
+    <!-- 60 degrees -->
+    <path
+        android:strokeColor="#AAFFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M205,65 L185,75" />
+    
+    <!-- 90 degrees (East) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M220,120 L200,120" />
+    
+    <!-- 120 degrees -->
+    <path
+        android:strokeColor="#AAFFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M205,175 L185,165" />
+    
+    <!-- 150 degrees -->
+    <path
+        android:strokeColor="#AAFFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M170,205 L160,190" />
+    
+    <!-- 180 degrees (South) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M120,220 L120,200" />
+    
+    <!-- 210 degrees -->
+    <path
+        android:strokeColor="#AAFFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M70,205 L80,190" />
+    
+    <!-- 240 degrees -->
+    <path
+        android:strokeColor="#AAFFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M35,175 L55,165" />
+    
+    <!-- 270 degrees (West) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M20,120 L40,120" />
+    
+    <!-- 300 degrees -->
+    <path
+        android:strokeColor="#AAFFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M35,65 L55,75" />
+    
+    <!-- 330 degrees -->
+    <path
+        android:strokeColor="#AAFFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M70,35 L80,50" />
+
+    <!-- Degree numbers - adding numerical markers -->
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M118,15 L122,15 L120,12 Z" /> <!-- 0 -->
+    
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M175,30 L173,34 L177,34 Z" /> <!-- 30 -->
+    
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M210,60 L206,62 L208,66 Z" /> <!-- 60 -->
+    
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M225,118 L225,122 L228,120 Z" /> <!-- 90 -->
+    
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M210,180 L206,178 L208,174 Z" /> <!-- 120 -->
+    
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M175,210 L173,206 L177,206 Z" /> <!-- 150 -->
+    
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M118,225 L122,225 L120,228 Z" /> <!-- 180 -->
+    
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M65,210 L67,206 L71,206 Z" /> <!-- 210 -->
+    
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M30,180 L34,178 L32,174 Z" /> <!-- 240 -->
+    
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M15,118 L15,122 L12,120 Z" /> <!-- 270 -->
+    
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M30,60 L34,62 L32,66 Z" /> <!-- 300 -->
+    
+    <path
+        android:fillColor="#CCFFFFFF"
+        android:pathData="M65,30 L67,34 L71,34 Z" /> <!-- 330 -->
+    
+    <!-- Central point -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,120 m-3,0 a3,3 0,1 1,6 0 a3,3 0,1 1,-6 0" />
+</vector> 

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/banner1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:id="@id/layoutContent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="1.0">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.92">
+                        <androidx.appcompat.widget.Toolbar
+                            android:theme="@style/ToolbarStyle"
+                            android:id="@id/toolbar"
+                            android:visibility="visible"
+                            android:layout_width="fill_parent"
+                            android:layout_height="?actionBarSize">
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="18.0dip"
+                                android:textColor="@color/grey"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:id="@id/tvTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Prayer Time Configuration"
+                                android:fontFamily="@font/biko_bold_700" />
+                        </androidx.appcompat.widget.Toolbar>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="#ffffffff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.08">
+                        <ScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="30.0dip">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:padding="10.0dip"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+                                <LinearLayout
+                                    android:background="@drawable/round_corner_square_20"
+                                    android:padding="15.0dip"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="@color/ltwhite">
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:layout_marginEnd="10.0dip">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.0">
+                                            <TextView
+                                                android:textColor="@color/green"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Location"
+                                                android:fontFamily="@font/medium" />
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:id="@id/tvLocation"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="5.0dip"
+                                                android:text="Kayseri Türkiye"
+                                                android:fontFamily="@font/biko_bold_700" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10.0dip">
+                                            <LinearLayout
+                                                android:gravity="center_vertical"
+                                                android:orientation="horizontal"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1.0">
+                                                <TextView
+                                                    android:textSize="16.0dip"
+                                                    android:textColor="@color/green"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Longitude"
+                                                    android:fontFamily="@font/medium" />
+                                                <TextView
+                                                    android:textSize="16.0dip"
+                                                    android:textColor="@color/grey"
+                                                    android:id="@id/tvLongitude"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="10.0dip"
+                                                    android:text="38.728661"
+                                                    android:fontFamily="@font/biko_bold_700" />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:gravity="center_vertical"
+                                                android:orientation="horizontal"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:layout_marginTop="5.0dip"
+                                                android:layout_weight="1.0">
+                                                <TextView
+                                                    android:textSize="16.0dip"
+                                                    android:textColor="@color/green"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Latitude"
+                                                    android:fontFamily="@font/medium" />
+                                                <TextView
+                                                    android:textSize="16.0dip"
+                                                    android:textColor="@color/grey"
+                                                    android:id="@id/tvLatitude"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="10.0dip"
+                                                    android:text="38.728661"
+                                                    android:fontFamily="@font/biko_bold_700" />
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:gravity="center"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="fill_parent">
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                            <LinearLayout
+                                                android:gravity="center"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1.0">
+                                                <LinearLayout
+                                                    android:gravity="center_vertical"
+                                                    android:id="@id/btnCurrentLocation"
+                                                    android:background="@drawable/round_corner_square_5"
+                                                    android:paddingTop="5.0dip"
+                                                    android:paddingBottom="5.0dip"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:paddingStart="10.0dip"
+                                                    android:paddingEnd="10.0dip">
+                                                    <ImageView
+                                                        android:layout_width="24.0dip"
+                                                        android:layout_height="24.0dip"
+                                                        android:src="@drawable/ic_gps" />
+                                                    <TextView
+                                                        android:textColor="@color/white"
+                                                        android:layout_width="fill_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Current Location"
+                                                        android:layout_weight="1.0"
+                                                        android:fontFamily="@font/medium"
+                                                        android:textAlignment="textEnd"
+                                                        android:layout_marginStart="10.0dip" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1.0">
+                                                <LinearLayout
+                                                    android:gravity="center_vertical"
+                                                    android:id="@id/btnChangeLocation"
+                                                    android:background="@drawable/round_corner_square_5"
+                                                    android:paddingTop="5.0dip"
+                                                    android:paddingBottom="5.0dip"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="10.0dip"
+                                                    android:paddingStart="10.0dip"
+                                                    android:paddingEnd="10.0dip">
+                                                    <ImageView
+                                                        android:layout_width="24.0dip"
+                                                        android:layout_height="24.0dip"
+                                                        android:src="@drawable/ic_location" />
+                                                    <TextView
+                                                        android:textColor="@color/white"
+                                                        android:layout_width="fill_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Change Location"
+                                                        android:layout_weight="1.0"
+                                                        android:fontFamily="@font/medium"
+                                                        android:textAlignment="textEnd"
+                                                        android:layout_marginStart="10.0dip" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20.0dip">
+                                    <TextView
+                                        android:textSize="18.0dip"
+                                        android:textColor="@color/grey"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Time Format"
+                                        android:fontFamily="@font/medium" />
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10.0dip">
+                                        <LinearLayout
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:id="@id/ll24Format"
+                                            android:background="@drawable/round_border_square"
+                                            android:padding="10.0dip"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="@color/ltwhite">
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10.0dip"
+                                                android:text="24-hour format"
+                                                android:layout_weight="1.0"
+                                                android:fontFamily="@font/medium"
+                                                android:layout_marginEnd="10.0dip" />
+                                            <ImageView
+                                                android:id="@id/iv24Format"
+                                                android:layout_width="22.0dip"
+                                                android:layout_height="22.0dip"
+                                                android:src="@drawable/ic_unchecked" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:id="@id/ll12Format"
+                                            android:background="@drawable/round_border_square"
+                                            android:padding="10.0dip"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10.0dip"
+                                            android:backgroundTint="@color/ltwhite">
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10.0dip"
+                                                android:text="12-hour format"
+                                                android:layout_weight="1.0"
+                                                android:fontFamily="@font/medium"
+                                                android:layout_marginEnd="10.0dip" />
+                                            <ImageView
+                                                android:id="@id/iv12Format"
+                                                android:layout_width="22.0dip"
+                                                android:layout_height="22.0dip"
+                                                android:src="@drawable/ic_unchecked" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20.0dip">
+                                    <TextView
+                                        android:textSize="18.0dip"
+                                        android:textColor="@color/grey"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Prayer Time Calculation Method"
+                                        android:fontFamily="@font/medium" />
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10.0dip">
+                                        <LinearLayout
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:id="@id/llMethod0"
+                                            android:background="@drawable/round_border_square"
+                                            android:padding="10.0dip"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="@color/ltwhite">
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10.0dip"
+                                                android:text="Ithna Ashari"
+                                                android:layout_weight="1.0"
+                                                android:fontFamily="@font/medium"
+                                                android:layout_marginEnd="10.0dip" />
+                                            <ImageView
+                                                android:id="@id/ivMethod0"
+                                                android:layout_width="22.0dip"
+                                                android:layout_height="22.0dip"
+                                                android:src="@drawable/ic_unchecked" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:id="@id/llMethod1"
+                                            android:background="@drawable/round_border_square"
+                                            android:padding="10.0dip"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10.0dip"
+                                            android:backgroundTint="@color/ltwhite">
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10.0dip"
+                                                android:text="University of Islamic Sciences, Karachi"
+                                                android:layout_weight="1.0"
+                                                android:fontFamily="@font/medium"
+                                                android:layout_marginEnd="10.0dip" />
+                                            <ImageView
+                                                android:id="@id/ivMethod1"
+                                                android:layout_width="22.0dip"
+                                                android:layout_height="22.0dip"
+                                                android:src="@drawable/ic_unchecked" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:id="@id/llMethod2"
+                                            android:background="@drawable/round_border_square"
+                                            android:padding="10.0dip"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10.0dip"
+                                            android:backgroundTint="@color/ltwhite">
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10.0dip"
+                                                android:text="Islamic Society of North America (ISNA)"
+                                                android:layout_weight="1.0"
+                                                android:fontFamily="@font/medium"
+                                                android:layout_marginEnd="10.0dip" />
+                                            <ImageView
+                                                android:id="@id/ivMethod2"
+                                                android:layout_width="22.0dip"
+                                                android:layout_height="22.0dip"
+                                                android:src="@drawable/ic_unchecked" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:id="@id/llMethod3"
+                                            android:background="@drawable/round_border_square"
+                                            android:padding="10.0dip"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10.0dip"
+                                            android:backgroundTint="@color/ltwhite">
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10.0dip"
+                                                android:text="Muslim World League (MWL)"
+                                                android:layout_weight="1.0"
+                                                android:fontFamily="@font/medium"
+                                                android:layout_marginEnd="10.0dip" />
+                                            <ImageView
+                                                android:id="@id/ivMethod3"
+                                                android:layout_width="22.0dip"
+                                                android:layout_height="22.0dip"
+                                                android:src="@drawable/ic_unchecked" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:id="@id/llMethod4"
+                                            android:background="@drawable/round_border_square"
+                                            android:padding="10.0dip"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10.0dip"
+                                            android:backgroundTint="@color/ltwhite">
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10.0dip"
+                                                android:text="Umm al-Qura, Makkah"
+                                                android:layout_weight="1.0"
+                                                android:fontFamily="@font/medium"
+                                                android:layout_marginEnd="10.0dip" />
+                                            <ImageView
+                                                android:id="@id/ivMethod4"
+                                                android:layout_width="22.0dip"
+                                                android:layout_height="22.0dip"
+                                                android:src="@drawable/ic_unchecked" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:id="@id/llMethod5"
+                                            android:background="@drawable/round_border_square"
+                                            android:padding="10.0dip"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10.0dip"
+                                            android:backgroundTint="@color/ltwhite">
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10.0dip"
+                                                android:text="Egyptian General Authority of Survey"
+                                                android:layout_weight="1.0"
+                                                android:fontFamily="@font/medium"
+                                                android:layout_marginEnd="10.0dip" />
+                                            <ImageView
+                                                android:id="@id/ivMethod5"
+                                                android:layout_width="22.0dip"
+                                                android:layout_height="22.0dip"
+                                                android:src="@drawable/ic_unchecked" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:id="@id/llMethod6"
+                                            android:background="@drawable/round_border_square"
+                                            android:padding="10.0dip"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10.0dip"
+                                            android:backgroundTint="@color/ltwhite">
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10.0dip"
+                                                android:text="Custom Setting"
+                                                android:layout_weight="1.0"
+                                                android:fontFamily="@font/medium"
+                                                android:layout_marginEnd="10.0dip" />
+                                            <ImageView
+                                                android:id="@id/ivMethod6"
+                                                android:layout_width="22.0dip"
+                                                android:layout_height="22.0dip"
+                                                android:src="@drawable/ic_unchecked" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20.0dip">
+                                    <TextView
+                                        android:textSize="18.0dip"
+                                        android:textColor="@color/grey"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Asar Method"
+                                        android:fontFamily="@font/medium" />
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10.0dip">
+                                        <LinearLayout
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:id="@id/llAsarMethod0"
+                                            android:background="@drawable/round_border_square"
+                                            android:padding="10.0dip"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="@color/ltwhite">
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10.0dip"
+                                                android:text="Shafii (standard)"
+                                                android:layout_weight="1.0"
+                                                android:fontFamily="@font/medium"
+                                                android:layout_marginEnd="10.0dip" />
+                                            <ImageView
+                                                android:id="@id/ivAsarMethod0"
+                                                android:layout_width="22.0dip"
+                                                android:layout_height="22.0dip"
+                                                android:src="@drawable/ic_unchecked" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal"
+                                            android:id="@id/llAsarMethod1"
+                                            android:background="@drawable/round_border_square"
+                                            android:padding="10.0dip"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10.0dip"
+                                            android:backgroundTint="@color/ltwhite">
+                                            <TextView
+                                                android:textSize="16.0dip"
+                                                android:textColor="@color/grey"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="10.0dip"
+                                                android:text="Hanafi"
+                                                android:layout_weight="1.0"
+                                                android:fontFamily="@font/medium"
+                                                android:layout_marginEnd="10.0dip" />
+                                            <ImageView
+                                                android:id="@id/ivAsarMethod1"
+                                                android:layout_width="22.0dip"
+                                                android:layout_height="22.0dip"
+                                                android:src="@drawable/ic_unchecked" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@id/banner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

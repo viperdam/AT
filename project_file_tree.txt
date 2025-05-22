@@ -1,0 +1,145 @@
+.
+├── .gitignore
+├── build.gradle.kts
+├── download_model.ps1
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── project_file_tree.txt
+├── project_structure.json
+├── settings.gradle.kts
+└── app
+    ├── .gitignore
+    ├── build.gradle.kts
+    ├── proguard-rules.pro
+    └── src
+        ├── androidTest
+        │   └── java
+        │       └── com
+        │           └── viperdam
+        │               └── kidsprayer
+        │                   └── ExampleInstrumentedTest.kt
+        └── main
+            ├── AndroidManifest.xml
+            ├── assets
+            │   └── pose_landmarker_lite.task
+            └── java
+                └── com
+                    └── viperdam
+                        └── kidsprayer
+                            ├── MainActivity.kt
+                            ├── PrayerApp.kt
+                            ├── ads
+                            │   ├── AdManager.kt
+                            │   └── AppOpenManager.kt
+                            ├── camera
+                            │   ├── CameraManager.kt
+                            │   ├── CameraManagerImpl.kt
+                            │   ├── PoseAnalyzerFactory.kt
+                            │   └── PoseAnalyzerFactoryImpl.kt
+                            ├── di
+                            │   ├── CameraModule.kt
+                            │   └── CoreModule.kt
+                            ├── ml
+                            │   ├── PoseDetector.kt
+                            │   ├── PrayerPoseAnalyzer.kt
+                            │   ├── PrayerPosition.kt
+                            │   ├── PrayerPositionClassifier.kt
+                            │   └── RakaatTracker.kt
+                            ├── model
+                            │   └── Prayer.kt
+                            ├── prayer
+                            │   ├── LocationManager.kt
+                            │   ├── PrayerCompletionManager.kt
+                            │   └── PrayerTimeCalculator.kt
+                            ├── security
+                            │   ├── DeviceAdminReceiver.kt
+                            │   └── PinManager.kt
+                            ├── service
+                            │   ├── LockScreenService.kt
+                            │   ├── PrayerReceiver.kt
+                            │   ├── PrayerScheduler.kt
+                            │   └── ServiceMonitorWorker.kt
+                            └── ui
+                                ├── lock
+                                │   ├── LockScreenActivity.kt
+                                │   └── LockScreenViewModel.kt
+                                ├── main
+                                │   ├── MainActivity.kt
+                                │   ├── MainViewModel.kt
+                                │   └── PrayerTimesAdapter.kt
+                                ├── pin
+                                │   ├── PinSetupDialog.kt
+                                │   └── PinVerificationDialog.kt
+                                └── settings
+                                    ├── PrayerSettingsAdapter.kt
+                                    ├── SettingsActivity.kt
+                                    └── SettingsViewModel.kt
+            └── res
+                ├── drawable
+                │   ├── bottom_sheet_background.xml
+                │   ├── ic_backspace.xml
+                │   ├── ic_launcher_background.xml
+                │   ├── ic_launcher_foreground.xml
+                │   ├── ic_location.xml
+                │   ├── ic_lock.xml
+                │   ├── ic_prayer.xml
+                │   └── ic_settings.xml
+                ├── font
+                ├── layout
+                │   ├── activity_lock_screen.xml
+                │   ├── activity_main.xml
+                │   ├── activity_settings.xml
+                │   ├── dialog_pin_setup.xml
+                │   ├── dialog_pin_verification.xml
+                │   ├── item_prayer_time.xml
+                │   ├── layout_camera_overlay.xml
+                │   ├── layout_general_settings.xml
+                │   ├── layout_pose_detection.xml
+                │   ├── layout_prayer_card.xml
+                │   └── layout_prayer_settings.xml
+                ├── mipmap-anydpi-v26
+                │   ├── ic_launcher_round.xml
+                │   └── ic_launcher.xml
+                ├── mipmap-hdpi
+                │   ├── ic_launcher_round.webp
+                │   └── ic_launcher.webp
+                ├── mipmap-mdpi
+                │   ├── ic_launcher_round.webp
+                │   └── ic_launcher.webp
+                ├── mipmap-xhdpi
+                │   ├── ic_launcher_round.webp
+                │   └── ic_launcher.webp
+                ├── mipmap-xxhdpi
+                │   ├── ic_launcher_round.webp
+                │   └── ic_launcher.webp
+                ├── mipmap-xxxhdpi
+                │   ├── ic_launcher_round.webp
+                │   └── ic_launcher.webp
+                ├── raw
+                │   ├── adhan_fajr.mp3
+                │   ├── adhan_normal.mp3
+                │   ├── nunito_regular.ttf
+                │   └── nunito_semibold.ttf
+                └── values
+                    ├── colors.xml
+                    ├── dimens.xml
+                    ├── integers.xml
+                    ├── strings.xml
+                    └── themes.xml
+            └── xml
+                ├── backup_rules.xml
+                ├── data_extraction_rules.xml
+                ├── device_admin.xml
+                └── file_paths.xml
+        └── test
+            └── java
+                └── com
+                    └── viperdam
+                        └── kidsprayer
+                            └── ExampleUnitTest.kt
+    └── gradle
+        └── libs.versions.toml
+        └── wrapper
+            ├── gradle-wrapper.jar
+            └── gradle-wrapper.properties

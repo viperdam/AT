@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base gradient -->
+    <item>
+        <shape>
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="#FFFFF8E1"
+                android:centerColor="#FFFFECB3"
+                android:endColor="#FFFFD54F"
+                android:centerX="0.3"
+                android:centerY="0.7" />
+        </shape>
+    </item>
+    
+    <!-- Pattern overlay - this will be tiled -->
+    <item>
+        <bitmap
+            android:src="@drawable/pattern_dots"
+            android:tileMode="repeat"
+            android:alpha="0.05" />
+    </item>
+</layer-list> 

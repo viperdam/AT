@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">ਅਜ਼ਾਨ ਟਾਈਮ</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">ਅਗਲੀ ਨਮਾਜ਼</string>
+    <string name="prayer_remaining">ਬਾਕੀ ਸਮਾਂ</string>
+    <string name="start_prayer">ਨਮਾਜ਼ ਸ਼ੁਰੂ ਕਰੋ</string>
+    <string name="resume_prayer">ਨਮਾਜ਼ ਜਾਰੀ ਰੱਖੋ</string>
+    <string name="enable_location">ਲੋਕੇਸ਼ਨ ਨੂੰ ਚਾਲੂ ਕਰੋ</string>
+    <string name="location_disabled">ਲੋਕੇਸ਼ਨ ਬੰਦ ਹੈ</string>
+    <string name="using_last_location">ਆਖਰੀ ਜਾਣੀ-ਪਛਾਣੀ ਲੋਕੇਸ਼ਨ ਦੀ ਵਰਤੋਂ ਕਰ ਰਿਹਾ ਹੈ</string>
+    <string name="location_permission_required">ਸਹੀ ਨਮਾਜ਼ ਦੇ ਸਮੇਂ ਲਈ ਲੋਕੇਸ਼ਨ ਦੀ ਇਜਾਜ਼ਤ ਜ਼ਰੂਰੀ ਹੈ</string>
+    <string name="enable_location_message">ਕਿਰਪਾ ਕਰਕੇ ਸਹੀ ਨਮਾਜ਼ ਦੇ ਸਮੇਂ ਲਈ ਲੋਕੇਸ਼ਨ ਨੂੰ ਚਾਲੂ ਕਰੋ</string>
+    <string name="test_lock">ਨਮਾਜ਼ ਲੌਕ ਦੀ ਜਾਂਚ ਕਰੋ</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">ਕਿਬਲਾ ਫਾਈਂਡਰ</string>
+    <string name="qibla_finder_description">ਕਿਬਲਾ ਦੀ ਦਿਸ਼ਾ ਲੱਭੋ (ਮੱਕਾ ਵਿੱਚ ਕਾਬਾ)</string>
+    <string name="fetching_location">ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਦਾ ਪਤਾ ਲਗਾ ਰਿਹਾ ਹੈ…</string>
+    <string name="location_found">ਲੋਕੇਸ਼ਨ: %1$s, %2$s</string>
+    <string name="location_not_available">ਲੋਕੇਸ਼ਨ ਉਪਲਬਧ ਨਹੀਂ ਹੈ</string>
+    <string name="location_error">ਲੋਕੇਸ਼ਨ ਪ੍ਰਾਪਤ ਕਰਨ ਵਿੱਚ ਤਰੁੱਟੀ</string>
+    <string name="location_error_message">ਤੁਹਾਡੀ ਲੋਕੇਸ਼ਨ ਦਾ ਪਤਾ ਲਗਾਉਣ ਵਿੱਚ ਅਸਫਲ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।</string>
+    <string name="enable_location_for_qibla">ਕਿਬਲਾ ਫਾਈਂਡਰ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਲੋਕੇਸ਼ਨ ਸੇਵਾਵਾਂ ਨੂੰ ਚਾਲੂ ਕਰੋ</string>
+    <string name="qibla_angle">ਕਿਬਲਾ ਦਿਸ਼ਾ: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">ਫਜਰ</string>
+    <string name="prayer_dhuhr">ਜ਼ੁਹਰ</string>
+    <string name="prayer_asr">ਅਸਰ</string>
+    <string name="prayer_maghrib">ਮਗ਼ਰਿਬ</string>
+    <string name="prayer_isha">ਇਸ਼ਾ</string>
+    <string name="rakaat_count">%d ਰਕਾਤ</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">ਭਾਸ਼ਾ ਸੈਟਿੰਗਜ਼</string>
+    <string name="select_language">ਭਾਸ਼ਾ ਚੁਣੋ</string>
+    <string name="language_english">ਅੰਗਰੇਜ਼ੀ</string>
+    <string name="language_german">ਜਰਮਨ</string>
+    <string name="language_french">ਫਰਾਂਸੀਸੀ</string>
+    <string name="language_dutch">ਡੱਚ</string>
+    <string name="language_arabic">ਅਰਬੀ</string>
+    <string name="language_hindi">ਹਿੰਦੀ</string>
+    <string name="language_indonesian">ਇੰਡੋਨੇਸ਼ੀਆਈ</string>
+    <string name="language_turkish">ਤੁਰਕੀ</string>
+    <string name="language_bengali">ਬੰਗਾਲੀ</string>
+    <string name="language_italian">ਇਤਾਲਵੀ</string>
+    <string name="language_kannada">ਕੰਨੜ</string>
+    <string name="language_malay">ਮਲਾਈ</string>
+    <string name="language_malayalam">ਮਲਿਆਲਮ</string>
+    <string name="language_marathi">ਮਰਾਠੀ</string>
+    <string name="language_persian">ਫਾਰਸੀ</string>
+    <string name="language_punjabi">ਪੰਜਾਬੀ</string>
+    <string name="language_russian">ਰੂਸੀ</string>
+    <string name="language_spanish">ਸਪੈਨਿਸ਼</string>
+    <string name="language_tamil">ਤਮਿਲ</string>
+    <string name="language_thai">ਥਾਈ</string>
+    <string name="language_vietnamese">ਵੀਅਤਨਾਮੀ</string>
+    <string name="language_restart_required">ਭਾਸ਼ਾ ਬਦਲਾਵ ਲਾਗੂ ਕਰਨ ਲਈ ਐਪ ਰੀਸਟਾਰਟ ਹੋਵੇਗੀ</string>
+    <string name="selected">ਚੁਣਿਆ ਗਿਆ</string>
+</resources> 

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Thời Gian Azan</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">Lễ Nguyện Kế Tiếp</string>
+    <string name="prayer_remaining">Thời Gian Còn Lại</string>
+    <string name="start_prayer">Bắt Đầu Lễ Nguyện</string>
+    <string name="resume_prayer">Tiếp Tục Lễ Nguyện</string>
+    <string name="enable_location">Bật Vị Trí</string>
+    <string name="location_disabled">Vị Trí Đã Tắt</string>
+    <string name="using_last_location">Đang Sử Dụng Vị Trí Đã Biết Cuối Cùng</string>
+    <string name="location_permission_required">Cần Quyền Vị Trí Cho Thời Gian Lễ Nguyện Chính Xác</string>
+    <string name="enable_location_message">Vui Lòng Bật Vị Trí Cho Thời Gian Lễ Nguyện Chính Xác</string>
+    <string name="test_lock">Kiểm Tra Khóa Lễ Nguyện</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">Tìm Qibla</string>
+    <string name="qibla_finder_description">Tìm Hướng Qibla (Ka\'bah ở Mecca)</string>
+    <string name="fetching_location">Đang Xác Định Vị Trí Của Bạn…</string>
+    <string name="location_found">Vị Trí: %1$s, %2$s</string>
+    <string name="location_not_available">Không Có Vị Trí</string>
+    <string name="location_error">Lỗi Lấy Vị Trí</string>
+    <string name="location_error_message">Không Thể Xác Định Vị Trí Của Bạn. Vui Lòng Thử Lại.</string>
+    <string name="enable_location_for_qibla">Vui Lòng Bật Dịch Vụ Vị Trí Để Sử Dụng Tìm Qibla</string>
+    <string name="qibla_angle">Hướng Qibla: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">Fajr</string>
+    <string name="prayer_dhuhr">Dhuhr</string>
+    <string name="prayer_asr">Asr</string>
+    <string name="prayer_maghrib">Maghrib</string>
+    <string name="prayer_isha">Isha</string>
+    <string name="rakaat_count">%d Rakaat</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">Cài Đặt Ngôn Ngữ</string>
+    <string name="select_language">Chọn Ngôn Ngữ</string>
+    <string name="language_english">Tiếng Anh</string>
+    <string name="language_german">Tiếng Đức</string>
+    <string name="language_french">Tiếng Pháp</string>
+    <string name="language_dutch">Tiếng Hà Lan</string>
+    <string name="language_arabic">Tiếng Ả Rập</string>
+    <string name="language_hindi">Tiếng Hindi</string>
+    <string name="language_indonesian">Tiếng Indonesia</string>
+    <string name="language_turkish">Tiếng Thổ Nhĩ Kỳ</string>
+    <string name="language_bengali">Tiếng Bengal</string>
+    <string name="language_italian">Tiếng Ý</string>
+    <string name="language_kannada">Tiếng Kannada</string>
+    <string name="language_malay">Tiếng Mã Lai</string>
+    <string name="language_malayalam">Tiếng Malayalam</string>
+    <string name="language_marathi">Tiếng Marathi</string>
+    <string name="language_persian">Tiếng Ba Tư</string>
+    <string name="language_punjabi">Tiếng Punjab</string>
+    <string name="language_russian">Tiếng Nga</string>
+    <string name="language_spanish">Tiếng Tây Ban Nha</string>
+    <string name="language_tamil">Tiếng Tamil</string>
+    <string name="language_thai">Tiếng Thái</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_restart_required">Ứng Dụng Sẽ Khởi Động Lại Để Áp Dụng Thay Đổi Ngôn Ngữ</string>
+    <string name="selected">Đã Chọn</string>
+</resources> 

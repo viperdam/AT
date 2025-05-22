@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">அதான் நேரம்</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">அடுத்த தொழுகை</string>
+    <string name="prayer_remaining">மீதமுள்ள நேரம்</string>
+    <string name="start_prayer">தொழுகையைத் தொடங்கு</string>
+    <string name="resume_prayer">தொழுகையைத் தொடரவும்</string>
+    <string name="enable_location">இருப்பிடத்தை இயக்கு</string>
+    <string name="location_disabled">இருப்பிடம் முடக்கப்பட்டுள்ளது</string>
+    <string name="using_last_location">கடைசியாக அறியப்பட்ட இருப்பிடத்தைப் பயன்படுத்துகிறது</string>
+    <string name="location_permission_required">துல்லியமான தொழுகை நேரத்திற்கு இருப்பிட அனுமதி தேவை</string>
+    <string name="enable_location_message">துல்லியமான தொழுகை நேரத்திற்கு இருப்பிடத்தை இயக்கவும்</string>
+    <string name="test_lock">தொழுகை பூட்டை சோதிக்கவும்</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">கிப்லா கண்டுபிடிப்பான்</string>
+    <string name="qibla_finder_description">கிப்லா திசையைக் கண்டறியவும் (மக்காவில் உள்ள கஅபா)</string>
+    <string name="fetching_location">உங்கள் இருப்பிடத்தைக் கண்டறிகிறது…</string>
+    <string name="location_found">இருப்பிடம்: %1$s, %2$s</string>
+    <string name="location_not_available">இருப்பிடம் கிடைக்கவில்லை</string>
+    <string name="location_error">இருப்பிடத்தைப் பெறுவதில் பிழை</string>
+    <string name="location_error_message">உங்கள் இருப்பிடத்தைக் கண்டறிய முடியவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="enable_location_for_qibla">கிப்லா கண்டுபிடிப்பானைப் பயன்படுத்த இருப்பிடச் சேவைகளை இயக்கவும்</string>
+    <string name="qibla_angle">கிப்லா திசை: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">ஃபஜ்ர்</string>
+    <string name="prayer_dhuhr">லுஹர்</string>
+    <string name="prayer_asr">அஸர்</string>
+    <string name="prayer_maghrib">மஃரிப்</string>
+    <string name="prayer_isha">இஷா</string>
+    <string name="rakaat_count">%d ரக்அத்</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">மொழி அமைப்புகள்</string>
+    <string name="select_language">மொழியைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="language_english">ஆங்கிலம்</string>
+    <string name="language_german">ஜெர்மன்</string>
+    <string name="language_french">பிரென்ச்</string>
+    <string name="language_dutch">டச்சு</string>
+    <string name="language_arabic">அரபி</string>
+    <string name="language_hindi">இந்தி</string>
+    <string name="language_indonesian">இந்தோனேசியன்</string>
+    <string name="language_turkish">துருக்கி</string>
+    <string name="language_bengali">வங்காளம்</string>
+    <string name="language_italian">இத்தாலியன்</string>
+    <string name="language_kannada">கன்னடம்</string>
+    <string name="language_malay">மலாய்</string>
+    <string name="language_malayalam">மலையாளம்</string>
+    <string name="language_marathi">மராத்தி</string>
+    <string name="language_persian">பார்சி</string>
+    <string name="language_punjabi">பஞ்சாபி</string>
+    <string name="language_russian">ரஷ்யன்</string>
+    <string name="language_spanish">ஸ்பானிஷ்</string>
+    <string name="language_tamil">தமிழ்</string>
+    <string name="language_thai">தாய்</string>
+    <string name="language_vietnamese">வியட்நாமிய</string>
+    <string name="language_restart_required">மொழி மாற்றங்களைப் பயன்படுத்த ஆப் மறுதொடக்கம் செய்யப்படும்</string>
+    <string name="selected">தேர்ந்தெடுக்கப்பட்டது</string>
+</resources> 

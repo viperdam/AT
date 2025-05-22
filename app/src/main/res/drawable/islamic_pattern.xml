@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Background (transparent) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,0 L100,0 L100,100 L0,100 Z" />
+    
+    <!-- Islamic Star Pattern -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,10 L55,17.3 L63.6,17.3 L58.6,24.6 L60.9,33.5 L50,28.5 L39.1,33.5 L41.4,24.6 L36.4,17.3 L45,17.3 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,90 L55,82.7 L63.6,82.7 L58.6,75.4 L60.9,66.5 L50,71.5 L39.1,66.5 L41.4,75.4 L36.4,82.7 L45,82.7 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,50 L17.3,45 L17.3,36.4 L24.6,41.4 L33.5,39.1 L28.5,50 L33.5,60.9 L24.6,58.6 L17.3,63.6 L17.3,55 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M90,50 L82.7,45 L82.7,36.4 L75.4,41.4 L66.5,39.1 L71.5,50 L66.5,60.9 L75.4,58.6 L82.7,63.6 L82.7,55 Z" />
+    
+    <!-- Connecting Lines -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M50,28.5 L50,71.5 M28.5,50 L71.5,50 M35.7,35.7 L64.3,64.3 M35.7,64.3 L64.3,35.7" />
+    
+    <!-- Decorative Circles -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25,25 C25,22.2 27.2,20 30,20 C32.8,20 35,22.2 35,25 C35,27.8 32.8,30 30,30 C27.2,30 25,27.8 25,25 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M65,25 C65,22.2 67.2,20 70,20 C72.8,20 75,22.2 75,25 C75,27.8 72.8,30 70,30 C67.2,30 65,27.8 65,25 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M25,75 C25,72.2 27.2,70 30,70 C32.8,70 35,72.2 35,75 C35,77.8 32.8,80 30,80 C27.2,80 25,77.8 25,75 Z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M65,75 C65,72.2 67.2,70 70,70 C72.8,70 75,72.2 75,75 C75,77.8 72.8,80 70,80 C67.2,80 65,77.8 65,75 Z" />
+</vector> 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bounce animation for buttons -->
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:propertyName="scaleX"
+            android:duration="@integer/anim_duration_short"
+            android:valueFrom="1.0"
+            android:valueTo="0.9"
+            android:valueType="floatType"
+            android:interpolator="@android:interpolator/accelerate_decelerate" />
+        <objectAnimator
+            android:propertyName="scaleX"
+            android:duration="@integer/anim_duration_short"
+            android:valueFrom="0.9"
+            android:valueTo="1.1"
+            android:valueType="floatType"
+            android:interpolator="@android:interpolator/bounce" />
+        <objectAnimator
+            android:propertyName="scaleX"
+            android:duration="@integer/anim_duration_short"
+            android:valueFrom="1.1"
+            android:valueTo="1.0"
+            android:valueType="floatType"
+            android:interpolator="@android:interpolator/decelerate_cubic" />
+    </set>
+    
+    <!-- Fade and slide in animation -->
+    <set android:ordering="together">
+        <alpha
+            android:duration="@integer/anim_duration_medium"
+            android:fromAlpha="0.0"
+            android:toAlpha="1.0"
+            android:interpolator="@android:interpolator/decelerate_quad" />
+        <translate
+            android:duration="@integer/anim_duration_medium"
+            android:fromYDelta="50%p"
+            android:toYDelta="0"
+            android:interpolator="@android:interpolator/decelerate_quad" />
+    </set>
+    
+    <!-- Pulse animation for highlights -->
+    <set android:ordering="sequentially">
+        <objectAnimator
+            android:propertyName="alpha"
+            android:duration="@integer/anim_duration_medium"
+            android:valueFrom="1.0"
+            android:valueTo="0.6"
+            android:repeatCount="infinite"
+            android:repeatMode="reverse"
+            android:interpolator="@android:interpolator/accelerate_decelerate" />
+    </set>
+</set>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Rainbow arc background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00FFFFFF" />
+            <size android:height="80dp" android:width="1000dp" />
+        </shape>
+    </item>
+    
+    <!-- Rainbow gradient arc - drawn as a top-truncated oval -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="linear"
+                android:angle="90"
+                android:startColor="#FF9800"
+                android:centerColor="#FFEB3B"
+                android:endColor="#03A9F4"
+                android:centerY="0.2" />
+            <size android:height="160dp" android:width="1000dp" />
+        </shape>
+    </item>
+    
+    <!-- This is just a placeholder - the sun/moon position would be dynamically set in code -->
+    <item
+        android:drawable="@drawable/ic_sun"
+        android:width="24dp"
+        android:height="24dp"
+        android:gravity="top|center_horizontal" />
+</layer-list> 

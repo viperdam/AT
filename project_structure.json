@@ -1,0 +1,704 @@
+{
+  "name": "KidsPrayer",
+  "root": ".",
+  "children": [
+    {
+      "name": ".gitignore",
+      "type": "file"
+    },
+    {
+      "name": "build.gradle.kts",
+      "type": "file"
+    },
+    {
+      "name": "download_model.ps1",
+      "type": "file"
+    },
+    {
+      "name": "gradle.properties",
+      "type": "file"
+    },
+    {
+      "name": "gradlew",
+      "type": "file"
+    },
+    {
+      "name": "gradlew.bat",
+      "type": "file"
+    },
+    {
+      "name": "project_file_tree.txt",
+      "type": "file"
+    },
+    {
+      "name": "project_structure.json",
+      "type": "file"
+    },
+    {
+      "name": "settings.gradle.kts",
+      "type": "file"
+    },
+    {
+      "name": "app",
+      "type": "directory",
+      "children": [
+        {
+          "name": ".gitignore",
+          "type": "file"
+        },
+        {
+          "name": "build.gradle.kts",
+          "type": "file"
+        },
+        {
+          "name": "proguard-rules.pro",
+          "type": "file"
+        },
+        {
+          "name": "src",
+          "type": "directory",
+          "children": [
+            {
+              "name": "androidTest",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "java",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "com",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "viperdam",
+                          "type": "directory",
+                          "children": [
+                            {
+                              "name": "kidsprayer",
+                              "type": "directory",
+                              "children": [
+                                {
+                                  "name": "ExampleInstrumentedTest.kt",
+                                  "type": "file"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "main",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "AndroidManifest.xml",
+                  "type": "file"
+                },
+                {
+                  "name": "assets",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "pose_landmarker_lite.task",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "java",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "com",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "viperdam",
+                          "type": "directory",
+                          "children": [
+                            {
+                              "name": "kidsprayer",
+                              "type": "directory",
+                              "children": [
+                                {
+                                  "name": "MainActivity.kt",
+                                  "type": "file"
+                                },
+                                {
+                                  "name": "PrayerApp.kt",
+                                  "type": "file"
+                                },
+                                {
+                                  "name": "ads",
+                                  "type": "directory",
+                                  "children": [
+                                    {
+                                      "name": "AdManager.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "AppOpenManager.kt",
+                                      "type": "file"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "camera",
+                                  "type": "directory",
+                                  "children": [
+                                    {
+                                      "name": "CameraManager.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "CameraManagerImpl.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PoseAnalyzerFactory.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PoseAnalyzerFactoryImpl.kt",
+                                      "type": "file"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "di",
+                                  "type": "directory",
+                                  "children": [
+                                    {
+                                      "name": "CameraModule.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "CoreModule.kt",
+                                      "type": "file"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "ml",
+                                  "type": "directory",
+                                  "children": [
+                                    {
+                                      "name": "PoseDetector.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PrayerPoseAnalyzer.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PrayerPosition.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PrayerPositionClassifier.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "RakaatTracker.kt",
+                                      "type": "file"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "model",
+                                  "type": "directory",
+                                  "children": [
+                                    {
+                                      "name": "Prayer.kt",
+                                      "type": "file"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "prayer",
+                                  "type": "directory",
+                                  "children": [
+                                    {
+                                      "name": "LocationManager.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PrayerCompletionManager.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PrayerTimeCalculator.kt",
+                                      "type": "file"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "security",
+                                  "type": "directory",
+                                  "children": [
+                                    {
+                                      "name": "DeviceAdminReceiver.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PinManager.kt",
+                                      "type": "file"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "service",
+                                  "type": "directory",
+                                  "children": [
+                                    {
+                                      "name": "LockScreenService.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PrayerReceiver.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "PrayerScheduler.kt",
+                                      "type": "file"
+                                    },
+                                    {
+                                      "name": "ServiceMonitorWorker.kt",
+                                      "type": "file"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name": "ui",
+                                  "type": "directory",
+                                  "children": [
+                                    {
+                                      "name": "lock",
+                                      "type": "directory",
+                                      "children": [
+                                        {
+                                          "name": "LockScreenActivity.kt",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "LockScreenViewModel.kt",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "main",
+                                      "type": "directory",
+                                      "children": [
+                                        {
+                                          "name": "MainActivity.kt",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "MainViewModel.kt",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "PrayerTimesAdapter.kt",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "pin",
+                                      "type": "directory",
+                                      "children": [
+                                        {
+                                          "name": "PinSetupDialog.kt",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "PinVerificationDialog.kt",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "settings",
+                                      "type": "directory",
+                                      "children": [
+                                        {
+                                          "name": "PrayerSettingsAdapter.kt",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "SettingsActivity.kt",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "SettingsViewModel.kt",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "theme",
+                                      "type": "directory",
+                                      "children": [
+                                        {
+                                          "name": "Color.kt",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "Theme.kt",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "Type.kt",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "utils",
+                                      "type": "directory",
+                                      "children": [
+                                        {
+                                          "name": "LockWindowManager.kt",
+                                          "type": "file"
+                                        },
+                                        {
+                                          "name": "PermissionHelper.kt",
+                                          "type": "file"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "res",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "drawable",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "bottom_sheet_background.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_backspace.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_launcher_background.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_launcher_foreground.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_location.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_lock.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_prayer.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_settings.xml",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "font",
+                      "type": "directory"
+                    },
+                    {
+                      "name": "layout",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "activity_lock_screen.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "activity_main.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "activity_settings.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "dialog_pin_setup.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "dialog_pin_verification.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "item_prayer_time.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "layout_camera_overlay.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "layout_general_settings.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "layout_pose_detection.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "layout_prayer_card.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "layout_prayer_settings.xml",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mipmap-anydpi-v26",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "ic_launcher_round.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_launcher.xml",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mipmap-hdpi",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "ic_launcher_round.webp",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_launcher.webp",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mipmap-mdpi",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "ic_launcher_round.webp",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_launcher.webp",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mipmap-xhdpi",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "ic_launcher_round.webp",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_launcher.webp",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mipmap-xxhdpi",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "ic_launcher_round.webp",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_launcher.webp",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "mipmap-xxxhdpi",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "ic_launcher_round.webp",
+                          "type": "file"
+                        },
+                        {
+                          "name": "ic_launcher.webp",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "raw",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "adhan_fajr.mp3",
+                          "type": "file"
+                        },
+                        {
+                          "name": "adhan_normal.mp3",
+                          "type": "file"
+                        },
+                        {
+                          "name": "nunito_regular.ttf",
+                          "type": "file"
+                        },
+                        {
+                          "name": "nunito_semibold.ttf",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "values",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "colors.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "dimens.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "integers.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "strings.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "themes.xml",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "xml",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "backup_rules.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "data_extraction_rules.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "device_admin.xml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "file_paths.xml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "test",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "java",
+                      "type": "directory",
+                      "children": [
+                        {
+                          "name": "com",
+                          "type": "directory",
+                          "children": [
+                            {
+                              "name": "viperdam",
+                              "type": "directory",
+                              "children": [
+                                {
+                                  "name": "kidsprayer",
+                                  "type": "directory",
+                                  "children": [
+                                    {
+                                      "name": "ExampleUnitTest.kt",
+                                      "type": "file"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "gradle",
+          "type": "directory",
+          "children": [
+            {
+              "name": "libs.versions.toml",
+              "type": "file"
+            },
+            {
+              "name": "wrapper",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "gradle-wrapper.jar",
+                  "type": "file"
+                },
+                {
+                  "name": "gradle-wrapper.properties",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

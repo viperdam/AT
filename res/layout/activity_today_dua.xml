@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/banner1"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="1.0">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.92">
+                        <androidx.appcompat.widget.Toolbar
+                            android:theme="@style/ToolbarStyle"
+                            android:id="@id/toolbar"
+                            android:layout_width="fill_parent"
+                            android:layout_height="?actionBarSize">
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:textSize="18.0dip"
+                                android:textColor="@color/grey"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:id="@id/tvTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Today Dua"
+                                android:fontFamily="@font/biko_bold_700" />
+                        </androidx.appcompat.widget.Toolbar>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.08"
+                        android:paddingStart="15.0dip"
+                        android:paddingEnd="15.0dip">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="@drawable/round_corner_square_20"
+                            android:padding="15.0dip"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5.0dip"
+                            android:layout_marginBottom="5.0dip"
+                            android:backgroundTint="@color/ltwhite">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:gravity="center"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@id/ivFavorite"
+                                        android:layout_width="30.0dip"
+                                        android:layout_height="30.0dip"
+                                        android:src="@drawable/ic_favorite_border" />
+                                    <ImageView
+                                        android:id="@id/ivShare"
+                                        android:layout_width="30.0dip"
+                                        android:layout_height="30.0dip"
+                                        android:src="@drawable/ic_share"
+                                        android:layout_marginStart="10.0dip"
+                                        android:layout_marginEnd="5.0dip" />
+                                    <TextView
+                                        android:textSize="18.0dip"
+                                        android:id="@id/tvDua"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ"
+                                        android:fontFamily="@font/medium" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5.0dip">
+                                    <View
+                                        android:background="#ffbebebe"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1.0dip" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:padding="15.0dip"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textColor="@color/green"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Translation"
+                                        android:fontFamily="@font/medium" />
+                                    <TextView
+                                        android:textSize="16.0dip"
+                                        android:textColor="@color/grey"
+                                        android:id="@id/tvTranslation"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3.0dip"
+                                        android:text="Allaahum-maftah lee 'abwaaba rahmatika"
+                                        android:fontFamily="@font/medium" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15.0dip">
+                                    <TextView
+                                        android:textColor="@color/green"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="English Meaning"
+                                        android:fontFamily="@font/medium" />
+                                    <TextView
+                                        android:textSize="16.0dip"
+                                        android:textColor="@color/grey"
+                                        android:id="@id/tvEnglishMeaning"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3.0dip"
+                                        android:text="O Allah, open before me the doors of Your mercy."
+                                        android:fontFamily="@font/medium" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15.0dip">
+                                    <TextView
+                                        android:textColor="@color/green"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Remark &amp; Reference"
+                                        android:fontFamily="@font/medium" />
+                                    <TextView
+                                        android:textSize="16.0dip"
+                                        android:textColor="@color/grey"
+                                        android:id="@id/tvReference"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3.0dip"
+                                        android:text="Muslim 1/494"
+                                        android:fontFamily="@font/medium" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@id/banner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Ezan Vakti</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">Sonraki Namaz</string>
+    <string name="prayer_remaining">Kalan Süre</string>
+    <string name="start_prayer">Namaza Başla</string>
+    <string name="resume_prayer">Namaza Devam Et</string>
+    <string name="enable_location">Konumu Etkinleştir</string>
+    <string name="location_disabled">Konum devre dışı</string>
+    <string name="using_last_location">Bilinen son konum kullanılıyor</string>
+    <string name="location_permission_required">Doğru namaz vakitleri için konum izni gerekli</string>
+    <string name="enable_location_message">Doğru namaz vakitleri için lütfen konumu etkinleştirin</string>
+    <string name="test_lock">Namaz Kilidini Test Et</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">Kıble Bulucu</string>
+    <string name="qibla_finder_description">Kıble yönünü bulun (Mekke\'deki Kabe)</string>
+    <string name="fetching_location">Konumunuz belirleniyor…</string>
+    <string name="location_found">Konum: %1$s, %2$s</string>
+    <string name="location_not_available">Konum mevcut değil</string>
+    <string name="location_error">Konum alınırken hata</string>
+    <string name="location_error_message">Konumunuz belirlenemedi. Lütfen tekrar deneyin.</string>
+    <string name="enable_location_for_qibla">Kıble bulucuyu kullanmak için lütfen konum hizmetlerini etkinleştirin</string>
+    <string name="qibla_angle">Kıble yönü: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">Sabah</string>
+    <string name="prayer_dhuhr">Öğle</string>
+    <string name="prayer_asr">İkindi</string>
+    <string name="prayer_maghrib">Akşam</string>
+    <string name="prayer_isha">Yatsı</string>
+    <string name="rakaat_count">%d Rekat</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">Dil Ayarları</string>
+    <string name="select_language">Dil Seçin</string>
+    <string name="language_english">İngilizce</string>
+    <string name="language_german">Almanca</string>
+    <string name="language_french">Fransızca</string>
+    <string name="language_dutch">Hollandaca</string>
+    <string name="language_arabic">Arapça</string>
+    <string name="language_hindi">Hintçe</string>
+    <string name="language_indonesian">Endonezce</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_bengali">Bengalce</string>
+    <string name="language_italian">İtalyanca</string>
+    <string name="language_kannada">Kannada</string>
+    <string name="language_malay">Malayca</string>
+    <string name="language_malayalam">Malayalam</string>
+    <string name="language_marathi">Marathice</string>
+    <string name="language_persian">Farsça</string>
+    <string name="language_punjabi">Pencapça</string>
+    <string name="language_russian">Rusça</string>
+    <string name="language_spanish">İspanyolca</string>
+    <string name="language_tamil">Tamilce</string>
+    <string name="language_thai">Tayca</string>
+    <string name="language_vietnamese">Vietnamca</string>
+    <string name="language_restart_required">Dil değişikliklerini uygulamak için uygulama yeniden başlatılacak</string>
+    <string name="selected">Seçildi</string>
+</resources> 

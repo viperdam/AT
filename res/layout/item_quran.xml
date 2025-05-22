@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/round_corner_square_20"
+    android:padding="15.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5.0dip"
+    android:layout_marginBottom="5.0dip"
+    android:backgroundTint="@color/ltwhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@id/ivFavorite"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:src="@drawable/ic_favorite_border" />
+            <TextView
+                android:textSize="18.0dip"
+                android:id="@id/tvArabicName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ"
+                android:fontFamily="@font/medium" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip">
+            <View
+                android:background="#ffbebebe"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="15.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="16.0dip"
+                android:textColor="@color/grey"
+                android:id="@id/tvArabicTranslation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Bismi Allahi alrrahmani alrraheemi"
+                android:fontFamily="@font/medium" />
+            <TextView
+                android:textColor="@color/green"
+                android:id="@id/tvEnglishName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.0dip"
+                android:text="In the name of Allah, Most Gracious, Most Merciful."
+                android:fontFamily="@font/medium" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

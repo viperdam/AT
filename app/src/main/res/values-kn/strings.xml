@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">ಅಜಾನ್ ಸಮಯ</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">ಮುಂದಿನ ನಮಾಜ್</string>
+    <string name="prayer_remaining">ಉಳಿದ ಸಮಯ</string>
+    <string name="start_prayer">ನಮಾಜ್ ಪ್ರಾರಂಭಿಸಿ</string>
+    <string name="resume_prayer">ನಮಾಜ್ ಮುಂದುವರೆಸಿ</string>
+    <string name="enable_location">ಸ್ಥಳ ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
+    <string name="location_disabled">ಸ್ಥಳ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ</string>
+    <string name="using_last_location">ಕೊನೆಯದಾಗಿ ತಿಳಿದಿರುವ ಸ್ಥಳವನ್ನು ಬಳಸಲಾಗುತ್ತಿದೆ</string>
+    <string name="location_permission_required">ನಿಖರವಾದ ನಮಾಜ್ ಸಮಯಗಳಿಗೆ ಸ್ಥಳ ಅನುಮತಿ ಅಗತ್ಯವಿದೆ</string>
+    <string name="enable_location_message">ದಯವಿಟ್ಟು ನಿಖರವಾದ ನಮಾಜ್ ಸಮಯಗಳಿಗಾಗಿ ಸ್ಥಳವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
+    <string name="test_lock">ನಮಾಜ್ ಲಾಕ್ ಪರೀಕ್ಷಿಸಿ</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">ಕಿಬ್ಲಾ ಹುಡುಕಾಟಗಾರ</string>
+    <string name="qibla_finder_description">ಕಿಬ್ಲಾದ ದಿಕ್ಕನ್ನು ಹುಡುಕಿ (ಮೆಕ್ಕಾದಲ್ಲಿರುವ ಕಾಬಾ)</string>
+    <string name="fetching_location">ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ನಿರ್ಧರಿಸಲಾಗುತ್ತಿದೆ…</string>
+    <string name="location_found">ಸ್ಥಳ: %1$s, %2$s</string>
+    <string name="location_not_available">ಸ್ಥಳ ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="location_error">ಸ್ಥಳವನ್ನು ಪಡೆಯುವಲ್ಲಿ ದೋಷ</string>
+    <string name="location_error_message">ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ನಿರ್ಧರಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ.</string>
+    <string name="enable_location_for_qibla">ಕಿಬ್ಲಾ ಹುಡುಕಾಟಗಾರವನ್ನು ಬಳಸಲು ದಯವಿಟ್ಟು ಸ್ಥಳ ಸೇವೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
+    <string name="qibla_angle">ಕಿಬ್ಲಾ ದಿಕ್ಕು: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">ಫಜ್ರ್</string>
+    <string name="prayer_dhuhr">ಜುಹರ್</string>
+    <string name="prayer_asr">ಅಸರ್</string>
+    <string name="prayer_maghrib">ಮಗ್ರಿಬ್</string>
+    <string name="prayer_isha">ಇಶಾ</string>
+    <string name="rakaat_count">%d ರಕಾತ್</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">ಭಾಷಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
+    <string name="select_language">ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="language_english">ಇಂಗ್ಲಿಷ್</string>
+    <string name="language_german">ಜರ್ಮನ್</string>
+    <string name="language_french">ಫ್ರೆಂಚ್</string>
+    <string name="language_dutch">ಡಚ್</string>
+    <string name="language_arabic">ಅರಬಿಕ್</string>
+    <string name="language_hindi">ಹಿಂದಿ</string>
+    <string name="language_indonesian">ಇಂಡೋನೇಷಿಯನ್</string>
+    <string name="language_turkish">ಟರ್ಕಿಶ್</string>
+    <string name="language_bengali">ಬಂಗಾಳಿ</string>
+    <string name="language_italian">ಇಟಾಲಿಯನ್</string>
+    <string name="language_kannada">ಕನ್ನಡ</string>
+    <string name="language_malay">ಮಲಯ್</string>
+    <string name="language_malayalam">ಮಲಯಾಳಂ</string>
+    <string name="language_marathi">ಮರಾಠಿ</string>
+    <string name="language_persian">ಪರ್ಷಿಯನ್</string>
+    <string name="language_punjabi">ಪಂಜಾಬಿ</string>
+    <string name="language_russian">ರಷ್ಯನ್</string>
+    <string name="language_spanish">ಸ್ಪ್ಯಾನಿಷ್</string>
+    <string name="language_tamil">ತಮಿಳು</string>
+    <string name="language_thai">ಥಾಯ್</string>
+    <string name="language_vietnamese">ವಿಯೆಟ್ನಾಮೀಸ್</string>
+    <string name="language_restart_required">ಭಾಷಾ ಬದಲಾವಣೆಗಳನ್ನು ಅನ್ವಯಿಸಲು ಅಪ್ಲಿಕೇಶನ್ ಮರುಪ್ರಾರಂಭಗೊಳ್ಳುತ್ತದೆ</string>
+    <string name="selected">ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ</string>
+</resources> 

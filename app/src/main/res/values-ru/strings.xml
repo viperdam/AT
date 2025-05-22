@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Время Намаза</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">Следующий Намаз</string>
+    <string name="prayer_remaining">Оставшееся Время</string>
+    <string name="start_prayer">Начать Намаз</string>
+    <string name="resume_prayer">Продолжить Намаз</string>
+    <string name="enable_location">Включить Местоположение</string>
+    <string name="location_disabled">Местоположение отключено</string>
+    <string name="using_last_location">Использование последнего известного местоположения</string>
+    <string name="location_permission_required">Разрешение на местоположение необходимо для точного времени намаза</string>
+    <string name="enable_location_message">Пожалуйста, включите местоположение для точного времени намаза</string>
+    <string name="test_lock">Тестировать Блокировку Намаза</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">Поиск Киблы</string>
+    <string name="qibla_finder_description">Найдите направление Киблы (Кааба в Мекке)</string>
+    <string name="fetching_location">Определение вашего местоположения…</string>
+    <string name="location_found">Местоположение: %1$s, %2$s</string>
+    <string name="location_not_available">Местоположение недоступно</string>
+    <string name="location_error">Ошибка получения местоположения</string>
+    <string name="location_error_message">Не удалось определить ваше местоположение. Пожалуйста, попробуйте снова.</string>
+    <string name="enable_location_for_qibla">Пожалуйста, включите службы местоположения для использования поиска Киблы</string>
+    <string name="qibla_angle">Направление Киблы: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">Фаджр</string>
+    <string name="prayer_dhuhr">Зухр</string>
+    <string name="prayer_asr">Аср</string>
+    <string name="prayer_maghrib">Магриб</string>
+    <string name="prayer_isha">Иша</string>
+    <string name="rakaat_count">%d Ракаат</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">Настройки Языка</string>
+    <string name="select_language">Выберите Язык</string>
+    <string name="language_english">Английский</string>
+    <string name="language_german">Немецкий</string>
+    <string name="language_french">Французский</string>
+    <string name="language_dutch">Голландский</string>
+    <string name="language_arabic">Арабский</string>
+    <string name="language_hindi">Хинди</string>
+    <string name="language_indonesian">Индонезийский</string>
+    <string name="language_turkish">Турецкий</string>
+    <string name="language_bengali">Бенгальский</string>
+    <string name="language_italian">Итальянский</string>
+    <string name="language_kannada">Каннада</string>
+    <string name="language_malay">Малайский</string>
+    <string name="language_malayalam">Малаялам</string>
+    <string name="language_marathi">Маратхи</string>
+    <string name="language_persian">Персидский</string>
+    <string name="language_punjabi">Панджаби</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_spanish">Испанский</string>
+    <string name="language_tamil">Тамильский</string>
+    <string name="language_thai">Тайский</string>
+    <string name="language_vietnamese">Вьетнамский</string>
+    <string name="language_restart_required">Приложение будет перезапущено для применения изменений языка</string>
+    <string name="selected">Выбрано</string>
+</resources> 

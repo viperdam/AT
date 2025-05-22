@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background (transparent) -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,0 L200,0 L200,200 L0,200 Z" />
+    
+    <!-- Tiny Star 1 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M20,30 L22,24 L28,22 L22,20 L20,14 L18,20 L12,22 L18,24 Z" />
+        
+    <!-- Tiny Star 2 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,90 L62,84 L68,82 L62,80 L60,74 L58,80 L52,82 L58,84 Z" />
+        
+    <!-- Tiny Star 3 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,40 L122,34 L128,32 L122,30 L120,24 L118,30 L112,32 L118,34 Z" />
+        
+    <!-- Tiny Star 4 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M170,70 L172,64 L178,62 L172,60 L170,54 L168,60 L162,62 L168,64 Z" />
+        
+    <!-- Tiny Star 5 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,140 L32,134 L38,132 L32,130 L30,124 L28,130 L22,132 L28,134 Z" />
+        
+    <!-- Tiny Star 6 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M100,160 L102,154 L108,152 L102,150 L100,144 L98,150 L92,152 L98,154 Z" />
+        
+    <!-- Tiny Star 7 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M180,130 L182,124 L188,122 L182,120 L180,114 L178,120 L172,122 L178,124 Z" />
+        
+    <!-- Small dots scattered around -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,50 C40,48.9 40.9,48 42,48 C43.1,48 44,48.9 44,50 C44,51.1 43.1,52 42,52 C40.9,52 40,51.1 40,50 Z" />
+        
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M80,30 C80,28.9 80.9,28 82,28 C83.1,28 84,28.9 84,30 C84,31.1 83.1,32 82,32 C80.9,32 80,31.1 80,30 Z" />
+        
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M140,80 C140,78.9 140.9,78 142,78 C143.1,78 144,78.9 144,80 C144,81.1 143.1,82 142,82 C140.9,82 140,81.1 140,80 Z" />
+        
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,110 C50,108.9 50.9,108 52,108 C53.1,108 54,108.9 54,110 C54,111.1 53.1,112 52,112 C50.9,112 50,111.1 50,110 Z" />
+        
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M160,120 C160,118.9 160.9,118 162,118 C163.1,118 164,118.9 164,120 C164,121.1 163.1,122 162,122 C160.9,122 160,121.1 160,120 Z" />
+        
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M110,170 C110,168.9 110.9,168 112,168 C113.1,168 114,168.9 114,170 C114,171.1 113.1,172 112,172 C110.9,172 110,171.1 110,170 Z" />
+</vector> 

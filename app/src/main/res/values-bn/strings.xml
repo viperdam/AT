@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">আজান সময়</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">পরবর্তী নামাজ</string>
+    <string name="prayer_remaining">বাকি সময়</string>
+    <string name="start_prayer">নামাজ শুরু করুন</string>
+    <string name="resume_prayer">নামাজ পুনরায় শুরু করুন</string>
+    <string name="enable_location">অবস্থান সক্ষম করুন</string>
+    <string name="location_disabled">অবস্থান অক্ষম করা আছে</string>
+    <string name="using_last_location">সর্বশেষ জানা অবস্থান ব্যবহার করছে</string>
+    <string name="location_permission_required">সঠিক নামাজের সময়ের জন্য অবস্থান অনুমতি প্রয়োজন</string>
+    <string name="enable_location_message">সঠিক নামাজের সময়ের জন্য অনুগ্রহ করে অবস্থান সক্ষম করুন</string>
+    <string name="test_lock">নামাজ লক পরীক্ষা করুন</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">কিবলা খোঁজক</string>
+    <string name="qibla_finder_description">কিবলার দিক খুঁজুন (মক্কায় কাবা)</string>
+    <string name="fetching_location">আপনার অবস্থান নির্ধারণ করা হচ্ছে…</string>
+    <string name="location_found">অবস্থান: %1$s, %2$s</string>
+    <string name="location_not_available">অবস্থান উপলব্ধ নয়</string>
+    <string name="location_error">অবস্থান পেতে ত্রুটি</string>
+    <string name="location_error_message">আপনার অবস্থান নির্ধারণ করতে অক্ষম। অনুগ্রহ করে আবার চেষ্টা করুন।</string>
+    <string name="enable_location_for_qibla">কিবলা খোঁজক ব্যবহার করতে অনুগ্রহ করে অবস্থান পরিষেবাগুলি সক্ষম করুন</string>
+    <string name="qibla_angle">কিবলা দিক: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">ফজর</string>
+    <string name="prayer_dhuhr">জোহর</string>
+    <string name="prayer_asr">আসর</string>
+    <string name="prayer_maghrib">মাগরিব</string>
+    <string name="prayer_isha">ইশা</string>
+    <string name="rakaat_count">%d রাকাত</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">ভাষা সেটিংস</string>
+    <string name="select_language">ভাষা নির্বাচন করুন</string>
+    <string name="language_english">ইংরেজি</string>
+    <string name="language_german">জার্মান</string>
+    <string name="language_french">ফরাসি</string>
+    <string name="language_dutch">ডাচ</string>
+    <string name="language_arabic">আরবি</string>
+    <string name="language_hindi">হিন্দি</string>
+    <string name="language_indonesian">ইন্দোনেশিয়ান</string>
+    <string name="language_turkish">তুর্কি</string>
+    <string name="language_bengali">বাংলা</string>
+    <string name="language_italian">ইতালিয়ান</string>
+    <string name="language_kannada">কন্নড়</string>
+    <string name="language_malay">মালয়</string>
+    <string name="language_malayalam">মালায়ালাম</string>
+    <string name="language_marathi">মারাঠি</string>
+    <string name="language_persian">ফারসি</string>
+    <string name="language_punjabi">পাঞ্জাবি</string>
+    <string name="language_russian">রাশিয়ান</string>
+    <string name="language_spanish">স্প্যানিশ</string>
+    <string name="language_tamil">তামিল</string>
+    <string name="language_thai">থাই</string>
+    <string name="language_vietnamese">ভিয়েতনামি</string>
+    <string name="language_restart_required">ভাষা পরিবর্তন প্রয়োগ করতে অ্যাপ পুনরায় চালু হবে</string>
+    <string name="selected">নির্বাচিত</string>
+</resources> 

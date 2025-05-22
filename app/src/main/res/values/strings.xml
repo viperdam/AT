@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Adhan Time</string>
+
+    <!-- Volume Button Service -->
+    <string name="volume_service_channel_name">Volume Button Service</string>
+    <string name="volume_service_channel_description">Service to handle volume button presses during Adhan</string>
+    <string name="volume_service_notification_title">Adhan Volume Control</string>
+    <string name="volume_service_notification_text">Press volume buttons to stop Adhan</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">Next Prayer</string>
+    <string name="prayer_remaining">Time Remaining</string>
+    <string name="start_prayer">Start Prayer</string>
+    <string name="resume_prayer">Resume Prayer</string>
+    <string name="enable_location">Enable Location</string>
+    <string name="location_disabled">Location is disabled</string>
+    <string name="using_last_location">Using last known location</string>
+    <string name="location_permission_required">Location permission is required for accurate prayer times</string>
+    <string name="enable_location_message">Please enable location for accurate prayer times</string>
+    <string name="test_lock">Test Prayer Lock</string>
+    <string name="read_quran">Read Quran</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">Qibla Finder</string>
+    <string name="qibla_finder_description">Find the direction of Qibla (Kaaba in Mecca)</string>
+    <string name="fetching_location">Determining your location…</string>
+    <string name="location_found">Location: %1$s, %2$s</string>
+    <string name="location_not_available">Location is not available</string>
+    <string name="location_error">Error getting location</string>
+    <string name="location_error_message">Could not determine your location. Please try again.</string>
+    <string name="enable_location_for_qibla">Please enable location services to use the Qibla finder</string>
+    <string name="qibla_angle">Qibla direction: %1$s°</string>
+    <string name="compass_background">Compass background</string>
+    <string name="qibla_arrow">Qibla direction arrow</string>
+    <string name="sensors_not_available">Your device does not have the required sensors for the compass</string>
+    <string name="refresh">Refresh</string>
+    <string name="sun_position">Sun: %1$s°</string>
+    <string name="moon_position">Moon: %1$s°</string>
+    <string name="sun_indicator">Sun position indicator</string>
+    <string name="moon_indicator">Moon position indicator</string>
+    <string name="kaaba_indicator">Kaaba indicator</string>
+    <string name="calibrate">Calibrate</string>
+    <string name="compass_accuracy_low">Compass accuracy: Low</string>
+    <string name="compass_accuracy_medium">Compass accuracy: Medium</string>
+    <string name="compass_accuracy_high">Compass accuracy: High</string>
+    <string name="compass_calibration_tip">For better accuracy, move your device in a figure-8 pattern</string>
+    <string name="calibrating_compass">Calibrating compass...</string>
+
+    <!-- Device Admin -->
+    <string name="device_admin_required">Device Admin Required</string>
+    <string name="device_admin_message">Device administrator access is required for prayer lock screen functionality</string>
+    <string name="device_admin_retry">Please enable device administrator access to continue. This is required for the app to function properly.</string>
+    <string name="device_admin_explanation">This app needs device admin access to ensure proper prayer time enforcement and prevent unauthorized access during prayer times.</string>
+    <string name="device_admin_enabled">Device admin enabled</string>
+    <string name="device_admin_disabled">Device admin disabled</string>
+    <string name="device_admin_warning_disable">Disabling device admin will prevent the app from properly enforcing prayer times. Are you sure?</string>
+    <string name="enable">Enable</string>
+    <string name="device_admin_label">Prayer Lock Screen</string>
+    <string name="device_admin_description">Required for prayer tracking and screen lock functionality</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">Fajr</string>
+    <string name="prayer_dhuhr">Dhuhr</string>
+    <string name="prayer_asr">Asr</string>
+    <string name="prayer_maghrib">Maghrib</string>
+    <string name="prayer_isha">Isha</string>
+    <string name="rakaat_count">%d Rakaat</string>
+
+    <!-- Prayer Completion Status -->
+    <string name="prayer_completed">Great job! Prayer completed!</string>
+    <string name="completed_by_pin">Completed by Parent</string>
+    <string name="completed_with_mlkit">Prayer Performed</string>
+    <string name="prayer_incomplete">Not Completed</string>
+    <string name="prayer_pending">Pending</string>
+    <string name="prayer_status_upcoming">UPCOMING</string>
+    <string name="prayer_status_now">NOW</string>
+    <string name="prayer_status_missed">MISSED</string>
+    <string name="prayer_status_completed">COMPLETED</string>
+    <string name="prayer_status_completed_by_prayer">COMPLETED</string>
+    <string name="prayer_status_completed_by_parent">COMPLETED BY PARENTS</string>
+
+    <!-- Prayer Positions -->
+    <string name="position_standing">Standing</string>
+    <string name="position_bowing">Bowing</string>
+    <string name="position_prostration">Prostration</string>
+    <string name="position_sitting">Sitting</string>
+    <string name="position_unknown">Detecting Position…</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="security_settings">Security Settings</string>
+    <string name="general_settings">General Settings</string>
+    <string name="prayer_settings">Prayer Settings</string>
+    <string name="privacy_settings">Privacy Settings</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="gdpr_consent">GDPR Consent</string>
+    <string name="gdpr_consent_desc">Allow data collection under European privacy law</string>
+    <string name="ccpa_consent">CCPA Consent</string>
+    <string name="ccpa_consent_desc">Allow data collection under California privacy law</string>
+
+    <!-- Permissions -->
+    <string name="permission_required">Permission Required</string>
+    <string name="permission_rationale">These permissions are needed for the app to function properly and track your prayers.</string>
+    <string name="permission_settings_message">Please enable the required permissions in Settings to use all features.</string>
+    <string name="permission_denied">Permissions Denied</string>
+    <string name="permission_denied_message">The app needs these permissions to function properly. Please enable them in Settings.</string>
+    <string name="grant">Grant</string>
+    <string name="cancel">Cancel</string>
+    <string name="initial_permission_message">This app needs several permissions to function properly. Please grant them to continue.</string>
+    <string name="continue_text">Continue</string>
+    <string name="exit">Exit</string>
+    <string name="later">Later</string>
+    <string name="system_settings_required">System Settings Required</string>
+    <string name="system_settings_message">Additional system settings need to be configured for proper app functionality.</string>
+    <string name="missing_settings">Missing Settings</string>
+    <string name="missing_settings_message">The following settings need to be enabled:</string>
+    <string name="permissions_required">Required permissions must be granted for the app to function properly</string>
+
+    <!-- Alarm Permission -->
+    <string name="alarm_permission_title">Alarm Permission</string>
+    <string name="alarm_permission_message">This app needs permission to schedule exact alarms for prayer times. Please enable it in Settings.</string>
+
+    <!-- Do Not Disturb Permission -->
+    <string name="dnd_permission_title">Do Not Disturb Access</string>
+    <string name="dnd_permission_message">Please allow the app to play Adhan even when Do Not Disturb is enabled.</string>
+
+    <!-- Battery Optimization -->
+    <string name="battery_optimization_title">Improve Reliability</string>
+    <string name="battery_optimization_message">To ensure accurate prayer times and notifications, Adhan Time needs to run in the background. Please tap \"Allow\" in the next dialog to enable this.</string>
+    <string name="battery_optimization_button">Optimize</string>
+
+    <!-- Overlay Permission -->
+    <string name="overlay_permission_title">Display Over Other Apps</string>
+    <string name="overlay_permission_message">This app needs permission to show prayer reminders over other apps.</string>
+
+    <!-- Security -->
+    <string name="change_pin">Change PIN</string>
+    <string name="reset_pin">Reset PIN</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="confirm_pin">Confirm PIN</string>
+    <string name="pin_setup">Setup PIN</string>
+    <string name="parent_pin">Parent PIN</string>
+    <string name="enter_current_pin">Enter Current PIN</string>
+    <string name="enter_new_pin">Enter New PIN</string>
+    <string name="confirm_new_pin">Confirm New PIN</string>
+    <string name="pin_changed_successfully">PIN changed successfully</string>
+    <string name="pin_mismatch">PINs don\'t match. Try again.</string>
+    <string name="incorrect_pin">Incorrect PIN</string>
+    <string name="pin_requirement">PIN must be 4 digits</string>
+    <string name="new_pin_set">New PIN has been set</string>
+    <string name="pin_attempts_remaining">Incorrect PIN. %d attempts remaining</string>
+    <string name="pin_locked_out">PIN entry locked. Please wait %d seconds</string>
+    <string name="pin_locked_out_warning">Too many incorrect attempts. PIN entry will be disabled for 30 seconds</string>
+    <string name="pin_cooldown_active">PIN entry is temporarily disabled</string>
+    <string name="pin_retry_after">Please try again after %d seconds</string>
+    <string name="pin_timeout_expired">PIN entry re-enabled</string>
+    <string name="pin_disabled">PIN entry disabled</string>
+    <string name="pin_enabled">PIN entry enabled</string>
+    <string name="pin_verify_title">Verify Parent PIN</string>
+    <string name="pin_verify_message">Please enter your PIN to verify</string>
+    <string name="pin_timeout_remaining">Timeout remaining: %d seconds</string>
+    <string name="pin_attempts_exceeded">Maximum PIN attempts exceeded</string>
+    <string name="error_wrong_pin">Incorrect PIN. Please try again.</string>
+
+    <!-- Lock Screen Protection -->
+    <string name="protection_active">Prayer lock protection active</string>
+    <string name="protection_enforced">Prayer time protection enforced</string>
+    <string name="protection_restarted">Protection service restarted</string>
+    <string name="protection_error">Error in protection service</string>
+    <string name="protection_recovered">Protection service recovered</string>
+    <string name="protection_status">Protection status: %s</string>
+    <string name="protection_initializing">Initializing protection</string>
+    <string name="protection_starting">Starting protection service</string>
+    <string name="protection_stopping">Stopping protection service</string>
+    <string name="protection_layer_active">Protection layer %d active</string>
+    <string name="protection_service_error">Protection service error: %s</string>
+    <string name="protection_recovery_attempt">Attempting to recover protection (attempt %d)</string>
+    <string name="protection_service_restarted">Protection service restarted successfully</string>
+    <string name="protection_service_failed">Protection service failed to start</string>
+
+    <!-- Prayer Settings -->
+    <string name="enable_prayer">Enable Prayer</string>
+    <string name="adhan_settings">Adhan Settings</string>
+    <string name="prayer_notification_settings">Prayer Notification Settings</string>
+    <string name="lockscreen_settings">Lock Screen Settings</string>
+    <string name="play_adhan">Play Adhan</string>
+    <string name="show_notification">Show Notification</string>
+    <string name="enable_lock_screen">Enable Lock Screen</string>
+    <string name="lock_device">Lock Device</string>
+    <string name="prayer_tracking">Prayer Tracking</string>
+    <string name="vibrate_on_adhan">Vibrate on Adhan</string>
+    <string name="override_dnd_adhan">Override Do Not Disturb for Adhan</string>
+    <string name="notification_time">Notification Time</string>
+    <string name="vibrate_on_notification">Vibrate on Notification</string>
+    <string name="override_dnd_notification">Override Do Not Disturb for Notification</string>
+    <string name="lock_screen_settings">Lock Screen Settings</string>
+    <string name="disable_camera">Disable Camera</string>
+    <string name="require_pin">Require PIN</string>
+
+    <!-- Adhan Settings -->
+    <string name="adhan_volume">Adhan Volume</string>
+    <string name="adhan_sound">Adhan Sound</string>
+    <string name="adhan_vibration">Vibrate with Adhan</string>
+    <string name="adhan_dnd_override">Override Do Not Disturb</string>
+
+    <!-- Notification Settings -->
+    <string name="notification_advance_time">Notification Time</string>
+    <string name="notification_sound">Notification Sound</string>
+    <string name="notification_vibration">Vibrate with Notification</string>
+    <string name="notification_dnd_override">Show During Do Not Disturb</string>
+    <string name="enable_vibration">Enable Vibration</string>
+
+    <!-- Lock Screen Settings -->
+    <string name="lock_screen_duration">Lock Duration</string>
+    <string name="lock_screen_type">Lock Screen Type</string>
+    <string name="lock_screen_camera">Use Camera for Prayer Tracking</string>
+    <string name="lock_screen_pin">Require PIN to Unlock</string>
+
+    <!-- Notifications -->
+    <string name="prayer_notification_channel">Prayer Time Notifications</string>
+    <string name="prayer_notification_channel_description">Notifications for prayer times and Adhan</string>
+    <string name="prayer_time_notification">Prayer Time</string>
+    <string name="time_for_prayer">Time for %s prayer</string>
+    <string name="upcoming_prayer_notification_title">Upcoming Prayer</string>
+    <string name="upcoming_prayer_notification_text">%s prayer will begin in 15 minutes</string>
+    <string name="prayer_notification_title">Prayer Time: %1$s</string>
+    <string name="prayer_notification_message">It\'s time for prayer</string>
+
+    <!-- ADD THESE -->
+    <string name="prayer_advance_notification_title">%1$d minutes until %2$s</string>
+    <string name="prayer_advance_notification_message">Time to get ready for prayer.</string>
+
+    <!-- Quran Feature Strings -->
+    <string name="quran_title">Quran</string>
+    <string name="back_button_desc">Back</string>
+    <string name="select_surah">Select Surah</string>
+    <string name="loading_surahs">Loading Surahs…</string>
+    <string name="loading_verses">Loading Verses…</string>
+    <string name="no_surahs_found">No Surahs found.</string>
+    <string name="no_verses_found">No verses found for this Surah.</string>
+    <string name="open_source_licenses">Open Source Licenses</string>
+    <string name="holy_quran_library_license_title">HolyQuran Library (MIT License)</string>
+    <string name="holy_quran_library_license_text">
+        Copyright 2024 KHAOUITI ABDELHAKIM\n\nLicensed under the MIT License\nYou may obtain a copy of the License at\n\nhttp://opensource.org/licenses/MIT\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the MIT License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the MIT License.
+    </string>
+
+    <!-- Prayer Calculation -->
+    <string name="calculation_method">Calculation Method</string>
+    <string name="prayer_location">Prayer Location</string>
+    <string name="adjust_times">Adjust Times</string>
+
+    <!-- Actions -->
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+    <string name="confirm">Confirm</string>
+    <string name="discard">Discard</string>
+    <string name="clear_button_description">Clear PIN entry and reset system</string>
+    <string name="clear">RST</string>
+    <string name="delete">Delete</string>
+    <string name="retry">Retry</string>
+
+    <!-- Messages -->
+    <string name="unsaved_changes">Unsaved Changes</string>
+    <string name="save_changes_message">Do you want to save your changes?</string>
+    <string name="reset_pin_confirmation">Are you sure you want to reset the PIN?</string>
+    <string name="location_required">Location access is needed for prayer times</string>
+    <string name="error_showing_pin_dialog">Unable to show PIN verification</string>
+    <string name="error_opening_settings">Unable to open settings</string>
+
+    <!-- Camera and ML Kit -->
+    <string name="camera_error">Camera Error</string>
+    <string name="camera_permission_required">Camera permission is required for prayer tracking</string>
+    <string name="camera_initialization_failed">Failed to initialize camera</string>
+    <string name="camera_error_message">Error: %s</string>
+    <string name="pose_detection_error">Error in pose detection</string>
+    <string name="retry_camera">Retry Camera</string>
+    <string name="camera_unavailable">Camera is unavailable</string>
+
+    <!-- Lock Screen -->
+    <string name="prayer_lock_active">Prayer Lock Active</string>
+    <string name="prayer_in_progress">Prayer in progress: %1$s</string>
+    <string name="unlock_with_pin">Unlock with PIN</string>
+    <string name="continue_prayer">Continue</string>
+    <string name="prayer_instructions">Follow the prayer positions</string>
+    <string name="tracking_active">Position Tracking Active</string>
+    <string name="tracking_paused">Position Tracking Paused</string>
+
+    <!-- Prayer Position Instructions -->
+    <string name="position_instruction_standing">Stand straight with hands folded</string>
+    <string name="position_instruction_bowing">Bow with back parallel to ground</string>
+    <string name="position_instruction_prostration">Prostrate with forehead touching ground</string>
+    <string name="position_instruction_sitting">Sit in tashahhud position</string>
+
+    <!-- Service Messages -->
+    <string name="service_running">Prayer tracking service is running</string>
+    <string name="service_stopped">Prayer tracking service stopped</string>
+    <string name="tracking_service_notification">Prayer Tracking Active</string>
+    <string name="tracking_service_channel">Prayer Tracking</string>
+    <string name="tracking_service_description">Keeps prayer tracking active</string>
+
+    <!-- Notification Channels -->
+    <string name="prayer_times_channel_title">Prayer Times</string>
+    <string name="prayer_service_title">Prayer Services</string>
+    <string name="prayer_service_message">Background services for prayer tracking</string>
+
+    <!-- Error Messages -->
+    <string name="error_creating_notification">Error creating notification</string>
+    <string name="error_playing_adhan">Error playing Adhan</string>
+    <string name="error_scheduling_prayer">Error scheduling prayer</string>
+    <string name="error_location_update">Error updating location</string>
+    <string name="error_camera_initialization">Error initializing camera</string>
+    <string name="error_pose_detection">Error in pose detection</string>
+    <string name="error_service_start">Error starting tracking service</string>
+    <string name="error_lock_screen">Error activating lock screen</string>
+    <string name="error_loading_prayers">Error loading prayer times</string>
+
+    <!-- Arrays -->
+    <string-array name="notification_times">
+        <item>15 minutes before</item>
+        <item>30 minutes before</item>
+        <item>45 minutes before</item>
+    </string-array>
+
+    <string-array name="calculation_methods">
+        <item>Muslim World League</item>
+        <item>Islamic Society of North America</item>
+        <item>Egyptian General Authority</item>
+        <item>Umm Al-Qura University, Makkah</item>
+        <item>University of Islamic Sciences, Karachi</item>
+    </string-array>
+
+    <!-- Adhan -->
+    <string name="adhan_notification_channel">Adhan Playback</string>
+    <string name="adhan_notification_description">Controls for adhan playback</string>
+    <string name="adhan_playing">Adhan playing for %s</string>
+    <string name="stop_adhan">Stop Adhan</string>
+    <string name="adhan_for_prayer">Adhan for %s Prayer</string>
+    <string name="adhan_volume_low">Low</string>
+    <string name="adhan_volume_medium">Medium</string>
+    <string name="adhan_volume_high">High</string>
+    <string name="adhan_volume_max">Max</string>
+
+    <!-- Ad Unit IDs -->
+    <string name="banner_ad_unit_id">ca-app-pub-6928555061691394/7584313339</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-6928555061691394/2468380730</string>
+    <string name="native_ad_unit_id">ca-app-pub-6928555061691394/6997716907</string>
+    <string name="rewarded_ad_unit_id">ca-app-pub-6928555061691394/4036171672</string>
+    
+    <!-- New strings for MainActivity -->
+    <string name="location_disabled_error">Please enable location services to get accurate prayer times</string>
+    <string name="device_admin_retry_title">Device Admin Required (Retry)</string>
+    <string name="device_admin_title">Device Admin Required</string>
+    <string name="device_admin_retry_message">Please enable device administrator access to continue. This is required for the app to function properly.</string>
+    <string name="admin_explanation">This app requires admin privileges for enhanced security features.</string>
+
+    <!-- New UI/UX strings -->
+    <string name="character_mascot">Character mascot</string>
+    <string name="card_badge">Card badge icon</string>
+    <string name="new_badge">NEW</string>
+    <string name="popular_badge">POPULAR</string>
+    <string name="completed_badge">COMPLETED</string>
+    
+    <!-- Game-like feedback messages -->
+    <string name="achievement_unlocked">Achievement unlocked!</string>
+    <string name="time_to_pray">It\'s prayer time!</string>
+    
+    <!-- Button texts -->
+    <string name="try_again">Try Again</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_prayers">Prayers</string>
+    <string name="nav_progress">Progress</string>
+    <string name="nav_settings">Settings</string>
+    
+    <!-- Placeholder text -->
+    <string name="lorem_short">Lorem ipsum dolor sit amet</string>
+    <string name="lorem_medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+
+    <!-- Main Activity -->
+    <string name="daily_prayers">Daily Prayers</string>
+    <string name="view_all_prayers">View all prayers</string>
+    <string name="back">Back</string>
+    
+    <!-- Character Messages -->
+    <string name="character_greeting">Assalamu Alaikum!</string>
+    <string name="character_prayer_time">Time to pray!</string>
+    <string name="character_completed">Great job!</string>
+    <string name="character_missed">Don\'t worry, try next time!</string>
+
+    <!-- Rating dialog strings -->
+    <string name="rating_title_positive">We\'re glad you\'re enjoying the app!</string>
+    <string name="rating_title_negative">We value your feedback</string>
+    <string name="rating_subtitle_positive">Please rate us on the Play Store</string>
+    <string name="rating_subtitle_negative">Tell us how we can improve</string>
+    <string name="rate_on_play_store">Rate on Play Store</string>
+    <string name="send_feedback">Send Feedback</string>
+    
+    <!-- Sharing dialog strings -->
+    <string name="share_app_title">Share Adhan Time with Friends</string>
+    <string name="share_app_message">Help others track prayer times accurately</string>
+    <string name="share_app_subject">Check out Adhan Time App</string>
+    <string name="share_via">Share via</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="facebook">Facebook</string>
+    <string name="email">Email</string>
+    <string name="more">More</string>
+    <string name="close">Close</string>
+    <string name="share_via_whatsapp">Share via WhatsApp</string>
+    <string name="share_via_facebook">Share via Facebook</string>
+    <string name="share_via_email">Share via Email</string>
+    <string name="more_options">More sharing options</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">Language Settings</string>
+    <string name="select_language">Select Language</string>
+    <string name="language_english">English</string>
+    <string name="language_german">German</string>
+    <string name="language_french">French</string>
+    <string name="language_dutch">Dutch</string>
+    <string name="language_arabic">Arabic</string>
+    <string name="language_hindi">Hindi</string>
+    <string name="language_indonesian">Indonesian</string>
+    <string name="language_turkish">Turkish</string>
+    <string name="language_bengali">Bengali</string>
+    <string name="language_italian">Italian</string>
+    <string name="language_kannada">Kannada</string>
+    <string name="language_malay">Malay</string>
+    <string name="language_malayalam">Malayalam</string>
+    <string name="language_marathi">Marathi</string>
+    <string name="language_persian">Persian</string>
+    <string name="language_punjabi">Punjabi</string>
+    <string name="language_russian">Russian</string>
+    <string name="language_spanish">Spanish</string>
+    <string name="language_tamil">Tamil</string>
+    <string name="language_thai">Thai</string>
+    <string name="language_vietnamese">Vietnamese</string>
+    <string name="language_restart_required">App will restart to apply language changes</string>
+    <string name="selected">Selected</string>
+
+    <!-- Language Selection -->
+    <string name="language_selection">Language Selection</string>
+    <string name="change_language">Change Language</string>
+    <string name="changing_language">Changing language…</string>
+    <string name="language_already_set">Language is already set to this value</string>
+
+    <!-- New privacy settings -->
+    <string name="settings_privacy">Privacy Settings</string>
+    <string name="settings_privacy_desc">Manage your privacy preferences and consent choices</string>
+    <string name="privacy_options">Privacy Options</string>
+    <string name="privacy_options_desc">Update your ad personalization choices</string>
+
+    <!-- Location Permission Strings -->
+    <string name="location_permission_title">Location Permission Required</string>
+    <string name="location_permission_rationale">Location permission is needed to calculate accurate prayer times for your location. Please grant permission to continue.</string>
+    
+    <!-- Background Location Permission -->
+    <string name="background_location_title">Background Location Access</string>
+    <string name="background_location_explanation">Background location access is needed to provide accurate prayer times even when the app is not in use. This helps ensure prayer notifications arrive at the correct times based on your location.</string>
+    <string name="background_location_rationale_title">Background Location Needed</string>
+    <string name="background_location_rationale">Background location access was denied. This permission is essential for accurate prayer times when the app is not actively being used. Please grant this permission for the app to function properly.</string>
+    
+    <!-- Missing string resources -->
+    <string name="location_settings_required_error">Location settings need to be enabled for accurate prayer times</string>
+    <string name="location_permission_error">Location permission is required for accurate prayer times</string>
+    <string name="no_upcoming_prayers">No upcoming prayers</string>
+
+    <!-- Location Status Notification -->
+    <string name="location_disabled_notification_title">Location Disabled</string>
+    <string name="location_disabled_notification_text">KidsPrayer requires location services to calculate accurate prayer times.</string>
+    <string name="enable_location_action">Enable Location</string>
+
+    <!-- Location Monitor Service Notification -->
+    <string name="location_monitor_notification_text">Monitoring location status for prayer times.</string>
+
+    <!-- New strings for Quran feature -->
+    <string name="search_surah">Search Surah...</string>
+    <string name="error_loading_data_message">Error loading data: %1$s</string>
+    <string name="surah_detail">Surah Detail</string>
+    <string name="search_verses">Search verses...</string>
+    <string name="error_loading_surah_details">Error loading Surah details.</string>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "32372198348",
+    "project_id": "focus-mode-c6630",
+    "storage_bucket": "focus-mode-c6630.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32372198348:android:0e16cdb136ed99880c2b69",
+        "android_client_info": {
+          "package_name": "com.viperdam.focusmode"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXOuF4mjNfBYjgVvpEm7eGb6xew6v5sWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32372198348:android:5797e914aeed433b0c2b69",
+        "android_client_info": {
+          "package_name": "com.viperdam.kidsprayer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXOuF4mjNfBYjgVvpEm7eGb6xew6v5sWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

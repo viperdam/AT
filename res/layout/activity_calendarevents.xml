@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/banner1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:id="@id/layoutContent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="1.0">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.92">
+                        <androidx.appcompat.widget.Toolbar
+                            android:theme="@style/ToolbarStyle"
+                            android:id="@id/toolbar"
+                            android:visibility="visible"
+                            android:layout_width="fill_parent"
+                            android:layout_height="?actionBarSize">
+                            <TextView
+                                android:textSize="18.0dip"
+                                android:textColor="@color/grey"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:id="@id/maintitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Day Month Year"
+                                android:fontFamily="@font/biko_bold_700" />
+                        </androidx.appcompat.widget.Toolbar>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="#ffffffff"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.08">
+                        <RelativeLayout
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+                            <ListView
+                                android:id="@id/listview"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:choiceMode="singleChoice" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@id/banner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

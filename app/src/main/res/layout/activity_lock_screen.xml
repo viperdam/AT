@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_lockscreen"
+    tools:context=".ui.lock.LockScreenActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/spacing_medium"> 
+
+            <!-- Prayer Info Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/prayerInfoCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_medium"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="8dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_medium"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/prayerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?attr/textAppearanceHeadlineMedium"
+                        android:textColor="@color/text_primary" />
+
+                    <TextView
+                        android:id="@+id/rakaatCounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_small" 
+                        android:textAppearance="?attr/textAppearanceHeadlineLarge"
+                        android:textColor="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/positionName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:textAppearance="?attr/textAppearanceHeadlineMedium"
+                        android:textColor="@color/text_secondary" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Prayer Time TextView -->
+            <TextView
+                android:id="@+id/prayerTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prayer Time"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@id/prayerInfoCard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Camera Container -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cameraContainer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/spacing_medium"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="4dp"
+                app:layout_constraintTop_toBottomOf="@id/prayerTimeTextView"
+                app:layout_constraintBottom_toTopOf="@id/startPrayerButton">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Camera Preview -->
+                    <androidx.camera.view.PreviewView
+                        android:id="@+id/viewFinder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" />
+
+                    <!-- Back Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/backButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/spacing_medium"
+                        android:text="Back"
+                        android:visibility="gone"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:icon="@drawable/ic_backspace"
+                        app:iconGravity="start" />
+
+                    <!-- Pose Overlay -->
+                    <com.viperdam.kidsprayer.camera.PoseOverlayView
+                        android:id="@+id/poseOverlay"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="@id/viewFinder"
+                        app:layout_constraintBottom_toBottomOf="@id/viewFinder"
+                        app:layout_constraintStart_toStartOf="@id/viewFinder"
+                        app:layout_constraintEnd_toEndOf="@id/viewFinder" />
+
+                    <!-- Error Message Card -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/errorCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_margin="@dimen/spacing_medium"
+                        app:cardCornerRadius="16dp"
+                        app:cardElevation="4dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/spacing_medium"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/errorMessage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textAppearance="?attr/textAppearanceBodyLarge"
+                                android:textColor="@color/error" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/retryButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_medium"
+                                android:text="@string/retry"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Start Prayer Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/startPrayerButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="@dimen/spacing_medium"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:text="@string/start_prayer"
+                android:textSize="18sp"
+                app:cornerRadius="30dp"
+                app:backgroundTint="#4CAF50"
+                style="@style/Widget.MaterialComponents.Button"
+                app:layout_constraintBottom_toTopOf="@id/pinEntryCard" />
+
+            <!-- PIN Entry Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/pinEntryCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_medium"
+                android:visibility="visible"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="12dp"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_medium"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parent_pin"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:textColor="@color/text_secondary" />
+
+                    <TextView
+                        android:id="@+id/pinDisplay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:letterSpacing="0.5"
+                        android:textSize="32sp"
+                        android:textColor="?attr/colorPrimary"
+                        android:minHeight="48dp"
+                        android:layout_marginTop="@dimen/spacing_small" />
+
+                    <TextView
+                        android:id="@+id/pinError"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:gravity="center"
+                        android:textColor="@color/error"
+                        android:visibility="gone"
+                        android:minHeight="24dp" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:columnCount="3"
+                        android:useDefaultMargins="true">
+
+                        <!-- Number buttons -->
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn1"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            android:text="1" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn2"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            android:text="2" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn3"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            android:text="3" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn4"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            android:text="4" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn5"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            android:text="5" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn6"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            android:text="6" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn7"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            android:text="7" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn8"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            android:text="8" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn9"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            android:text="9" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnClear"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            android:text="@string/clear" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn0"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            android:text="0" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnDelete"
+                            style="@style/Widget.KidsPrayer.Button.NumPad"
+                            android:layout_width="0dp"
+                            android:layout_height="64dp"
+                            android:layout_columnWeight="1"
+                            app:icon="@drawable/ic_backspace"
+                            app:iconGravity="textStart"
+                            app:iconTint="?attr/colorPrimary" />
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/loading_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

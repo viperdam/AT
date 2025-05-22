@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Theme Colors - Vibrant and Fun for Kids -->
+    <color name="colorPrimary">#4E2C8C</color> <!-- Deep Purple -->
+    <color name="colorPrimaryDark">#321B6C</color> <!-- Darker Purple -->
+    <color name="colorAccent">#FF9D3F</color> <!-- Bright Orange Accent -->
+    
+    <!-- Secondary Colors -->
+    <color name="colorSecondary">#49A7FF</color> <!-- Bright Blue -->
+    <color name="colorSecondaryDark">#3186D1</color> <!-- Darker Blue -->
+    <color name="colorTertiary">#FF6B8B</color> <!-- Coral Pink -->
+    
+    <!-- Status Colors -->
+    <color name="colorSuccess">#4CAF50</color> <!-- Green for completion -->
+    <color name="colorWarning">#FFC107</color> <!-- Amber for warnings -->
+    <color name="colorError">#F44336</color> <!-- Red for errors -->
+    
+    <!-- Prayer Status Colors -->
+    <color name="prayer_completed_by_prayer">#4CAF50</color> <!-- Green for prayer performed -->
+    <color name="prayer_completed_by_parent">#FF9800</color> <!-- Orange for parent PIN verification -->
+    <color name="prayer_missed">#F44336</color> <!-- Red for missed prayers -->
+    <color name="prayer_current">#2196F3</color> <!-- Blue for current prayer -->
+    <color name="prayer_upcoming">#9C27B0</color> <!-- Purple for upcoming prayers -->
+    
+    <!-- Sky Colors for Visualizer -->
+    <color name="sky_day">#64B5F6</color> <!-- Light Blue -->
+    <color name="sky_night">#1A237E</color> <!-- Deep Blue -->
+    <color name="sky_dawn_dusk">#FF9E80</color> <!-- Orange Pink -->
+    
+    <!-- Settings Theme Colors -->
+    <color name="settingsPrimary">#00A896</color> <!-- Teal -->
+    <color name="settingsPrimaryDark">#007B69</color> <!-- Dark Teal -->
+    <color name="settingsAccent">#FFD166</color> <!-- Bright Yellow -->
+    
+    <!-- Lock Screen Theme Colors -->
+    <color name="lockPrimary">#512DA8</color> <!-- Deep Purple -->
+    <color name="lockPrimaryDark">#311B92</color> <!-- Darker Purple -->
+    <color name="lockAccent">#FFA726</color> <!-- Orange -->
+    
+    <!-- Material 3 System Colors -->
+    <color name="primary">@color/colorPrimary</color>
+    <color name="tertiary">@color/colorTertiary</color>
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="outline">#9B8EB0</color> <!-- Light Purple for outlines -->
+    
+    <!-- Button Colors -->
+    <color name="button_primary">@color/colorPrimary</color>
+    <color name="button_text">@color/white</color>
+    <color name="clear_button_ripple">#33FFFFFF</color>
+    <color name="clear_button_background">@color/transparent</color>
+    <color name="clear_button_border">#9B8EB0</color>
+    <color name="clear_button_text">@color/text_primary</color>
+    
+    <!-- Common Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#757575</color>
+    <color name="light_gray">#EEEEEE</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#2A1650</color> <!-- Deep Purple for readability -->
+    <color name="text_secondary">#5F4B8B</color> <!-- Medium Purple -->
+    <color name="text_white">#FFFFFF</color>
+    
+    <!-- Background Colors -->
+    <color name="background_main">#F0E6FF</color> <!-- Light Purple Background -->
+    <color name="background_secondary">#E5F0FF</color> <!-- Light Blue Background -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="gradient_start">#4E2C8C</color> <!-- Deep Purple Start -->
+    <color name="gradient_middle">#7749CF</color> <!-- Medium Purple Middle -->
+    <color name="gradient_end">#9E8CF1</color> <!-- Light Purple End -->
+</resources>

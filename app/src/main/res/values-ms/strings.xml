@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Waktu Azan</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">Solat Seterusnya</string>
+    <string name="prayer_remaining">Masa Berbaki</string>
+    <string name="start_prayer">Mula Solat</string>
+    <string name="resume_prayer">Sambung Solat</string>
+    <string name="enable_location">Aktifkan Lokasi</string>
+    <string name="location_disabled">Lokasi dimatikan</string>
+    <string name="using_last_location">Menggunakan lokasi terakhir yang diketahui</string>
+    <string name="location_permission_required">Kebenaran lokasi diperlukan untuk waktu solat yang tepat</string>
+    <string name="enable_location_message">Sila aktifkan lokasi untuk waktu solat yang tepat</string>
+    <string name="test_lock">Uji Kunci Solat</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">Pencari Kiblat</string>
+    <string name="qibla_finder_description">Cari arah Kiblat (Kaabah di Mekah)</string>
+    <string name="fetching_location">Menentukan lokasi anda…</string>
+    <string name="location_found">Lokasi: %1$s, %2$s</string>
+    <string name="location_not_available">Lokasi tidak tersedia</string>
+    <string name="location_error">Ralat mendapatkan lokasi</string>
+    <string name="location_error_message">Tidak dapat menentukan lokasi anda. Sila cuba lagi.</string>
+    <string name="enable_location_for_qibla">Sila aktifkan perkhidmatan lokasi untuk menggunakan pencari Kiblat</string>
+    <string name="qibla_angle">Arah Kiblat: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">Subuh</string>
+    <string name="prayer_dhuhr">Zuhur</string>
+    <string name="prayer_asr">Asar</string>
+    <string name="prayer_maghrib">Maghrib</string>
+    <string name="prayer_isha">Isyak</string>
+    <string name="rakaat_count">%d Rakaat</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">Tetapan Bahasa</string>
+    <string name="select_language">Pilih Bahasa</string>
+    <string name="language_english">Bahasa Inggeris</string>
+    <string name="language_german">Bahasa Jerman</string>
+    <string name="language_french">Bahasa Perancis</string>
+    <string name="language_dutch">Bahasa Belanda</string>
+    <string name="language_arabic">Bahasa Arab</string>
+    <string name="language_hindi">Bahasa Hindi</string>
+    <string name="language_indonesian">Bahasa Indonesia</string>
+    <string name="language_turkish">Bahasa Turki</string>
+    <string name="language_bengali">Bahasa Bengali</string>
+    <string name="language_italian">Bahasa Itali</string>
+    <string name="language_kannada">Bahasa Kannada</string>
+    <string name="language_malay">Bahasa Melayu</string>
+    <string name="language_malayalam">Bahasa Malayalam</string>
+    <string name="language_marathi">Bahasa Marathi</string>
+    <string name="language_persian">Bahasa Parsi</string>
+    <string name="language_punjabi">Bahasa Punjabi</string>
+    <string name="language_russian">Bahasa Rusia</string>
+    <string name="language_spanish">Bahasa Sepanyol</string>
+    <string name="language_tamil">Bahasa Tamil</string>
+    <string name="language_thai">Bahasa Thai</string>
+    <string name="language_vietnamese">Bahasa Vietnam</string>
+    <string name="language_restart_required">Aplikasi akan dimulakan semula untuk menggunakan perubahan bahasa</string>
+    <string name="selected">Dipilih</string>
+</resources> 

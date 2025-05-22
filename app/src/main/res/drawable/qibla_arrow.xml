@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Center point -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,120 m-8,0 a8,8 0,1 1,16 0 a8,8 0,1 1,-16 0" />
+
+    <!-- Arrow stem - thicker and more visible -->
+    <path
+        android:fillColor="#80FF4081"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:pathData="M120,120 L120,40" />
+
+    <!-- Arrow head pointing to Qibla - larger and more visible -->
+    <path
+        android:fillColor="#FF4081"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M120,30 L110,55 L130,55 z" />
+
+    <!-- Arrow back - less prominent -->
+    <path
+        android:fillColor="#20FFFFFF"
+        android:strokeColor="#80FFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M120,120 L120,200" />
+
+    <!-- Kaaba symbol at the arrow head - more detailed -->
+    <path
+        android:fillColor="#000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M110,35 L130,35 L130,50 L110,50 z" />
+        
+    <!-- Kaaba door -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M117,40 L123,40 L123,50 L117,50 z" />
+        
+    <!-- Kaaba golden band (Kiswah) -->
+    <path
+        android:strokeColor="#FFD700"
+        android:strokeWidth="1"
+        android:pathData="M110,42 L130,42" />
+
+    <!-- Degrees indicator text -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M142,120 C142,120 150,120 150,120 C150,120 150,116 150,116 L157,120 L150,124 L150,120" />
+    
+</vector> 

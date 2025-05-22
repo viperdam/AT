@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing_md"
+    style="@style/Widget.KidsPrayer.Card.Game"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Image Banner -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+            
+            <!-- Background Image -->
+            <ImageView
+                android:id="@+id/ivCardBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="@null"
+                tools:src="@drawable/bg_placeholder" />
+                
+            <!-- Character Mascot (optional) -->
+            <ImageView
+                android:id="@+id/ivMascot"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/spacing_md"
+                android:contentDescription="@string/character_mascot"
+                android:visibility="visible"
+                tools:src="@drawable/mascot_placeholder" />
+                
+            <!-- Card Icon/Badge - top left -->
+            <ImageView
+                android:id="@+id/ivCardBadge"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="top|start"
+                android:layout_margin="@dimen/spacing_md"
+                android:background="@drawable/circle_background"
+                android:contentDescription="@string/card_badge"
+                android:padding="@dimen/spacing_xs"
+                tools:src="@drawable/icon_placeholder" />
+                
+            <!-- Status Badge - top right -->
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_margin="@dimen/spacing_md"
+                android:background="@drawable/status_badge_background"
+                android:paddingStart="@dimen/spacing_md"
+                android:paddingEnd="@dimen/spacing_md"
+                android:paddingTop="@dimen/spacing_xs"
+                android:paddingBottom="@dimen/spacing_xs"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="NEW" />
+        </FrameLayout>
+
+        <!-- Content Area -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_md">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.KidsPrayer.Title"
+                tools:text="Prayer Title" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:textAppearance="@style/TextAppearance.KidsPrayer.Body"
+                tools:text="This is a description of the prayer or activity card." />
+
+            <!-- Progress Bar (if needed) -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:progressTint="@color/primary_main"
+                android:progressBackgroundTint="@color/primary_lightest"
+                android:visibility="gone"
+                tools:visibility="visible"
+                tools:progress="75" />
+
+            <!-- Action Button -->
+            <Button
+                android:id="@+id/btnAction"
+                style="@style/Widget.KidsPrayer.Button.Primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/spacing_md"
+                tools:text="Start" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView> 

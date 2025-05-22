@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <!-- Enable Google Mobile Ads App Measurement -->
+    <feature name="googleMobileAdsAppMeasurement" enabled="true" />
+    
+    <!-- Enable Google Mobile Ads SDK data collection -->
+    <feature name="googleMobileAdsAppMeasurementDataCollection" enabled="true" />
+    
+    <!-- Enable custom topics API -->
+    <feature name="customTopics" enabled="true" />
+</configuration> 

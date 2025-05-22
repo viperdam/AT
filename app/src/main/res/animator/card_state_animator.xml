@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <set>
+            <objectAnimator
+                android:propertyName="translationZ"
+                android:duration="@integer/anim_duration_short"
+                android:valueTo="12dp"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            <objectAnimator
+                android:propertyName="scaleX"
+                android:duration="@integer/anim_duration_short"
+                android:valueTo="0.96"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:duration="@integer/anim_duration_short"
+                android:valueTo="0.96"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </set>
+    </item>
+    <!-- Hovered state (for larger devices) -->
+    <item android:state_hovered="true">
+        <set>
+            <objectAnimator
+                android:propertyName="translationZ"
+                android:duration="@integer/anim_duration_medium"
+                android:valueTo="8dp"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            <objectAnimator
+                android:propertyName="scaleX"
+                android:duration="@integer/anim_duration_medium"
+                android:valueTo="1.02"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:duration="@integer/anim_duration_medium"
+                android:valueTo="1.02"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </set>
+    </item>
+    <!-- Default state -->
+    <item>
+        <set>
+            <objectAnimator
+                android:propertyName="translationZ"
+                android:duration="@integer/anim_duration_medium"
+                android:valueTo="0dp"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            <objectAnimator
+                android:propertyName="scaleX"
+                android:duration="@integer/anim_duration_medium"
+                android:valueTo="1.0"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:duration="@integer/anim_duration_medium"
+                android:valueTo="1.0"
+                android:valueType="floatType"
+                android:interpolator="@android:interpolator/fast_out_slow_in"/>
+        </set>
+    </item>
+</selector> 

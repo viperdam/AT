@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Gebedsoproep Tijd</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">Volgende Gebed</string>
+    <string name="prayer_remaining">Resterende Tijd</string>
+    <string name="start_prayer">Gebed Starten</string>
+    <string name="resume_prayer">Gebed Hervatten</string>
+    <string name="enable_location">Locatie Inschakelen</string>
+    <string name="location_disabled">Locatie is uitgeschakeld</string>
+    <string name="using_last_location">Gebruik laatste bekende locatie</string>
+    <string name="location_permission_required">Locatietoestemming is vereist voor nauwkeurige gebedstijden</string>
+    <string name="enable_location_message">Schakel locatie in voor nauwkeurige gebedstijden</string>
+    <string name="test_lock">Test Gebedsvergrendeling</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">Qibla Zoeker</string>
+    <string name="qibla_finder_description">Vind de richting van de Qibla (Kaaba in Mekka)</string>
+    <string name="fetching_location">Uw locatie bepalen…</string>
+    <string name="location_found">Locatie: %1$s, %2$s</string>
+    <string name="location_not_available">Locatie is niet beschikbaar</string>
+    <string name="location_error">Fout bij het ophalen van locatie</string>
+    <string name="location_error_message">Kon uw locatie niet bepalen. Probeer het opnieuw.</string>
+    <string name="enable_location_for_qibla">Schakel locatieservices in om de Qibla zoeker te gebruiken</string>
+    <string name="qibla_angle">Qibla richting: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">Fajr</string>
+    <string name="prayer_dhuhr">Dhuhr</string>
+    <string name="prayer_asr">Asr</string>
+    <string name="prayer_maghrib">Maghrib</string>
+    <string name="prayer_isha">Isha</string>
+    <string name="rakaat_count">%d Rakaat</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">Taalinstellingen</string>
+    <string name="select_language">Selecteer Taal</string>
+    <string name="language_english">Engels</string>
+    <string name="language_german">Duits</string>
+    <string name="language_french">Frans</string>
+    <string name="language_dutch">Nederlands</string>
+    <string name="language_arabic">Arabisch</string>
+    <string name="language_hindi">Hindi</string>
+    <string name="language_indonesian">Indonesisch</string>
+    <string name="language_turkish">Turks</string>
+    <string name="language_bengali">Bengaals</string>
+    <string name="language_italian">Italiaans</string>
+    <string name="language_kannada">Kannada</string>
+    <string name="language_malay">Maleis</string>
+    <string name="language_malayalam">Malayalam</string>
+    <string name="language_marathi">Marathi</string>
+    <string name="language_persian">Perzisch</string>
+    <string name="language_punjabi">Punjabi</string>
+    <string name="language_russian">Russisch</string>
+    <string name="language_spanish">Spaans</string>
+    <string name="language_tamil">Tamil</string>
+    <string name="language_thai">Thais</string>
+    <string name="language_vietnamese">Vietnamees</string>
+    <string name="language_restart_required">App wordt opnieuw gestart om taalwijzigingen toe te passen</string>
+    <string name="selected">Geselecteerd</string>
+</resources> 

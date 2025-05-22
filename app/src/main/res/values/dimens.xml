@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing -->
+    <dimen name="spacing_tiny">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="spacing_xxlarge">48dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_micro">12sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_xlarge">20sp</dimen>
+    <dimen name="text_headline">24sp</dimen>
+    <dimen name="text_title">28sp</dimen>
+    <dimen name="text_display">34sp</dimen>
+
+    <!-- Component Sizes -->
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_min_width">120dp</dimen>
+    <dimen name="icon_size_small">24dp</dimen>
+    <dimen name="icon_size_medium">36dp</dimen>
+    <dimen name="icon_size_large">48dp</dimen>
+
+    <!-- Card Properties -->
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+
+    <!-- Prayer UI -->
+    <dimen name="prayer_card_height">120dp</dimen>
+    <dimen name="prayer_time_text">32sp</dimen>
+    <dimen name="rakaat_counter_size">48sp</dimen>
+
+    <!-- Camera Preview -->
+    <dimen name="camera_preview_height">300dp</dimen>
+    <dimen name="camera_overlay_stroke">2dp</dimen>
+
+    <!-- PIN Entry -->
+    <dimen name="pin_button_size">72dp</dimen>
+    <dimen name="pin_text_size">24sp</dimen>
+    <dimen name="pin_dot_size">12dp</dimen>
+    <dimen name="pin_dot_spacing">8dp</dimen>
+    <dimen name="clear_button_width">72dp</dimen>
+    <dimen name="clear_button_height">72dp</dimen>
+
+    <!-- Settings -->
+    <dimen name="settings_icon_size">24dp</dimen>
+    <dimen name="settings_switch_padding">16dp</dimen>
+    <dimen name="settings_group_margin">24dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="toolbar_title_margin">16dp</dimen>
+
+    <!-- Bottom Sheet -->
+    <dimen name="bottom_sheet_corner_radius">16dp</dimen>
+    <dimen name="bottom_sheet_peek_height">56dp</dimen>
+
+    <!-- List Items -->
+    <dimen name="list_item_height">72dp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
+    <dimen name="list_icon_padding">12dp</dimen>
+    <dimen name="grid_spacing">8dp</dimen>
+
+    <!-- Dialogs -->
+    <dimen name="dialog_padding">24dp</dimen>
+    <dimen name="dialog_corner_radius">28dp</dimen>
+    <dimen name="dialog_button_margin">8dp</dimen>
+
+    <!-- Progress Indicators -->
+    <dimen name="progress_size_small">24dp</dimen>
+    <dimen name="progress_size_medium">48dp</dimen>
+    <dimen name="progress_size_large">72dp</dimen>
+
+    <!-- Touch Targets -->
+    <dimen name="min_touch_target">48dp</dimen>
+    <dimen name="min_touch_padding">8dp</dimen>
+    
+    <!-- Rating Dialog -->
+    <dimen name="star_size">36dp</dimen>
+    <dimen name="star_margin">4dp</dimen>
+    <dimen name="rating_animation_height">150dp</dimen>
+</resources>

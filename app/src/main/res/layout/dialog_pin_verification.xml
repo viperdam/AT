@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_large"
+    android:background="@drawable/pin_dialog_background">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/enter_pin"
+        android:textColor="@color/text_primary"
+        android:textAppearance="?attr/textAppearanceHeadlineMedium"
+        android:layout_marginBottom="@dimen/spacing_medium" />
+
+    <TextView
+        android:id="@+id/pinDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:letterSpacing="0.5"
+        android:textSize="32sp"
+        android:textColor="?attr/colorPrimary"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        tools:text="••••" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="@dimen/spacing_small">
+
+        <TextView
+            android:id="@+id/pinError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/error"
+            android:visibility="gone"
+            android:textSize="14sp"
+            tools:text="Incorrect PIN. 2 attempts remaining"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/timeoutCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="?attr/colorError"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/pin_dialog_background"
+            android:padding="8dp"
+            tools:text="PIN locked. Wait 25 seconds"
+            tools:visibility="visible" />
+
+    </FrameLayout>
+
+    <GridLayout
+        android:id="@+id/numPadGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:columnCount="3"
+        android:useDefaultMargins="true">
+
+        <!-- Number buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn1"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            android:text="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            android:text="2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn3"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            android:text="3" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn4"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            android:text="4" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn5"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            android:text="5" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn6"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            android:text="6" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn7"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            android:text="7" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn8"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            android:text="8" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn9"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            android:text="9" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClear"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            android:text="C" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn0"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            android:text="0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            style="@style/Widget.KidsPrayer.Button.NumPad"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_columnWeight="1"
+            android:stateListAnimator="@animator/button_state_list_anim"
+            app:icon="@drawable/ic_backspace"
+            app:iconGravity="textStart"
+            app:iconTint="?attr/colorPrimary" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/pinStatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:visibility="gone"
+        tools:text="PIN entry will be re-enabled in 25 seconds"
+        tools:visibility="visible" />
+
+</LinearLayout>

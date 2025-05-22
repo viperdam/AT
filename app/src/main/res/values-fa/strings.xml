@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">زمان اذان</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">نماز بعدی</string>
+    <string name="prayer_remaining">زمان باقیمانده</string>
+    <string name="start_prayer">شروع نماز</string>
+    <string name="resume_prayer">ادامه نماز</string>
+    <string name="enable_location">فعال‌سازی موقعیت مکانی</string>
+    <string name="location_disabled">موقعیت مکانی غیرفعال است</string>
+    <string name="using_last_location">استفاده از آخرین موقعیت مکانی شناخته شده</string>
+    <string name="location_permission_required">دسترسی به موقعیت مکانی برای زمان دقیق نماز الزامی است</string>
+    <string name="enable_location_message">لطفاً برای زمان دقیق نماز، موقعیت مکانی را فعال کنید</string>
+    <string name="test_lock">آزمایش قفل نماز</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">یافتن قبله</string>
+    <string name="qibla_finder_description">یافتن جهت قبله (کعبه در مکه)</string>
+    <string name="fetching_location">در حال تعیین موقعیت شما…</string>
+    <string name="location_found">موقعیت: %1$s، %2$s</string>
+    <string name="location_not_available">موقعیت مکانی در دسترس نیست</string>
+    <string name="location_error">خطا در دریافت موقعیت مکانی</string>
+    <string name="location_error_message">تعیین موقعیت شما ناموفق بود. لطفاً دوباره تلاش کنید.</string>
+    <string name="enable_location_for_qibla">لطفاً برای استفاده از یافتن قبله، خدمات موقعیت مکانی را فعال کنید</string>
+    <string name="qibla_angle">جهت قبله: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">فجر</string>
+    <string name="prayer_dhuhr">ظهر</string>
+    <string name="prayer_asr">عصر</string>
+    <string name="prayer_maghrib">مغرب</string>
+    <string name="prayer_isha">عشاء</string>
+    <string name="rakaat_count">%d رکعت</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">تنظیمات زبان</string>
+    <string name="select_language">انتخاب زبان</string>
+    <string name="language_english">انگلیسی</string>
+    <string name="language_german">آلمانی</string>
+    <string name="language_french">فرانسوی</string>
+    <string name="language_dutch">هلندی</string>
+    <string name="language_arabic">عربی</string>
+    <string name="language_hindi">هندی</string>
+    <string name="language_indonesian">اندونزیایی</string>
+    <string name="language_turkish">ترکی</string>
+    <string name="language_bengali">بنگالی</string>
+    <string name="language_italian">ایتالیایی</string>
+    <string name="language_kannada">کانادا</string>
+    <string name="language_malay">مالایی</string>
+    <string name="language_malayalam">مالایالام</string>
+    <string name="language_marathi">مراتی</string>
+    <string name="language_persian">فارسی</string>
+    <string name="language_punjabi">پنجابی</string>
+    <string name="language_russian">روسی</string>
+    <string name="language_spanish">اسپانیایی</string>
+    <string name="language_tamil">تامیل</string>
+    <string name="language_thai">تایلندی</string>
+    <string name="language_vietnamese">ویتنامی</string>
+    <string name="language_restart_required">برنامه برای اعمال تغییرات زبان راه‌اندازی مجدد خواهد شد</string>
+    <string name="selected">انتخاب شده</string>
+</resources> 

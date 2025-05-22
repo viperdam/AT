@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">เวลาอะซาน</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">ละหมาดถัดไป</string>
+    <string name="prayer_remaining">เวลาที่เหลือ</string>
+    <string name="start_prayer">เริ่มละหมาด</string>
+    <string name="resume_prayer">ดำเนินการละหมาดต่อ</string>
+    <string name="enable_location">เปิดใช้งานตำแหน่ง</string>
+    <string name="location_disabled">ตำแหน่งถูกปิดใช้งาน</string>
+    <string name="using_last_location">กำลังใช้ตำแหน่งล่าสุดที่ทราบ</string>
+    <string name="location_permission_required">ต้องได้รับอนุญาตตำแหน่งสำหรับเวลาละหมาดที่แม่นยำ</string>
+    <string name="enable_location_message">โปรดเปิดใช้งานตำแหน่งสำหรับเวลาละหมาดที่แม่นยำ</string>
+    <string name="test_lock">ทดสอบล็อคละหมาด</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">ตัวค้นหากิบละห์</string>
+    <string name="qibla_finder_description">ค้นหาทิศกิบละห์ (กะอ์บะห์ในมักกะห์)</string>
+    <string name="fetching_location">กำลังระบุตำแหน่งของคุณ…</string>
+    <string name="location_found">ตำแหน่ง: %1$s, %2$s</string>
+    <string name="location_not_available">ไม่มีตำแหน่ง</string>
+    <string name="location_error">ข้อผิดพลาดในการรับตำแหน่ง</string>
+    <string name="location_error_message">ไม่สามารถระบุตำแหน่งของคุณได้ โปรดลองอีกครั้ง</string>
+    <string name="enable_location_for_qibla">โปรดเปิดใช้งานบริการตำแหน่งเพื่อใช้ตัวค้นหากิบละห์</string>
+    <string name="qibla_angle">ทิศกิบละห์: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">ฟัจญ์รฺ</string>
+    <string name="prayer_dhuhr">ซุฮร์</string>
+    <string name="prayer_asr">อัศร์</string>
+    <string name="prayer_maghrib">มัฆริบ</string>
+    <string name="prayer_isha">อิชา</string>
+    <string name="rakaat_count">%d ร็อกอะห์</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">การตั้งค่าภาษา</string>
+    <string name="select_language">เลือกภาษา</string>
+    <string name="language_english">อังกฤษ</string>
+    <string name="language_german">เยอรมัน</string>
+    <string name="language_french">ฝรั่งเศส</string>
+    <string name="language_dutch">ดัตช์</string>
+    <string name="language_arabic">อาหรับ</string>
+    <string name="language_hindi">ฮินดี</string>
+    <string name="language_indonesian">อินโดนีเซีย</string>
+    <string name="language_turkish">ตุรกี</string>
+    <string name="language_bengali">เบงกาลี</string>
+    <string name="language_italian">อิตาลี</string>
+    <string name="language_kannada">กันนาดา</string>
+    <string name="language_malay">มาเลย์</string>
+    <string name="language_malayalam">มาลายาลัม</string>
+    <string name="language_marathi">มราฐี</string>
+    <string name="language_persian">เปอร์เซีย</string>
+    <string name="language_punjabi">ปัญจาบี</string>
+    <string name="language_russian">รัสเซีย</string>
+    <string name="language_spanish">สเปน</string>
+    <string name="language_tamil">ทมิฬ</string>
+    <string name="language_thai">ไทย</string>
+    <string name="language_vietnamese">เวียดนาม</string>
+    <string name="language_restart_required">แอพจะรีสตาร์ทเพื่อใช้การเปลี่ยนแปลงภาษา</string>
+    <string name="selected">เลือกแล้ว</string>
+</resources> 

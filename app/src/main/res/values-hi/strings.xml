@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">अज़ान समय</string>
+
+    <!-- Main Screen -->
+    <string name="next_prayer">अगली नमाज़</string>
+    <string name="prayer_remaining">शेष समय</string>
+    <string name="start_prayer">नमाज़ शुरू करें</string>
+    <string name="resume_prayer">नमाज़ जारी रखें</string>
+    <string name="enable_location">स्थान सक्षम करें</string>
+    <string name="location_disabled">स्थान अक्षम है</string>
+    <string name="using_last_location">अंतिम ज्ञात स्थान का उपयोग कर रहा है</string>
+    <string name="location_permission_required">सटीक नमाज़ समय के लिए स्थान अनुमति आवश्यक है</string>
+    <string name="enable_location_message">कृपया सटीक नमाज़ समय के लिए स्थान सक्षम करें</string>
+    <string name="test_lock">नमाज़ लॉक परीक्षण करें</string>
+
+    <!-- Qibla Finder -->
+    <string name="qibla_finder">क़िबला फाइंडर</string>
+    <string name="qibla_finder_description">क़िबला की दिशा खोजें (मक्का में काबा)</string>
+    <string name="fetching_location">आपके स्थान का निर्धारण कर रहा है…</string>
+    <string name="location_found">स्थान: %1$s, %2$s</string>
+    <string name="location_not_available">स्थान उपलब्ध नहीं है</string>
+    <string name="location_error">स्थान प्राप्त करने में त्रुटि</string>
+    <string name="location_error_message">आपके स्थान का निर्धारण नहीं कर सका। कृपया पुन: प्रयास करें।</string>
+    <string name="enable_location_for_qibla">क़िबला फाइंडर का उपयोग करने के लिए कृपया स्थान सेवाएं सक्षम करें</string>
+    <string name="qibla_angle">क़िबला दिशा: %1$s°</string>
+
+    <!-- Prayer Names -->
+    <string name="prayer_fajr">फज्र</string>
+    <string name="prayer_dhuhr">ज़ुहर</string>
+    <string name="prayer_asr">अस्र</string>
+    <string name="prayer_maghrib">मग़रिब</string>
+    <string name="prayer_isha">इशा</string>
+    <string name="rakaat_count">%d रकात</string>
+
+    <!-- Language Settings -->
+    <string name="language_settings">भाषा सेटिंग्स</string>
+    <string name="select_language">भाषा चुनें</string>
+    <string name="language_english">अंग्रेज़ी</string>
+    <string name="language_german">जर्मन</string>
+    <string name="language_french">फ्रेंच</string>
+    <string name="language_dutch">डच</string>
+    <string name="language_arabic">अरबी</string>
+    <string name="language_hindi">हिंदी</string>
+    <string name="language_indonesian">इंडोनेशियाई</string>
+    <string name="language_turkish">तुर्की</string>
+    <string name="language_bengali">बंगाली</string>
+    <string name="language_italian">इतालवी</string>
+    <string name="language_kannada">कन्नड़</string>
+    <string name="language_malay">मलय</string>
+    <string name="language_malayalam">मलयालम</string>
+    <string name="language_marathi">मराठी</string>
+    <string name="language_persian">फारसी</string>
+    <string name="language_punjabi">पंजाबी</string>
+    <string name="language_russian">रूसी</string>
+    <string name="language_spanish">स्पेनिश</string>
+    <string name="language_tamil">तमिल</string>
+    <string name="language_thai">थाई</string>
+    <string name="language_vietnamese">वियतनामी</string>
+    <string name="language_restart_required">भाषा परिवर्तन लागू करने के लिए ऐप पुनरारंभ होगा</string>
+    <string name="selected">चयनित</string>
+</resources> 

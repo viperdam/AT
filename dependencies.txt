@@ -1,0 +1,51 @@
+Add these dependencies to your build.gradle.kts file:
+
+// Google Ads
+implementation("com.google.android.gms:play-services-ads:22.6.0")
+
+// DataStore
+implementation("androidx.datastore:datastore-preferences:1.0.0")
+implementation("androidx.datastore:datastore-preferences-core:1.0.0")
+
+Make sure these imports are present in your Kotlin files:
+
+PrayerApp.kt:
+import android.app.Activity
+import android.app.Application
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import androidx.work.PeriodicWorkRequestBuilder
+import androidx.work.WorkManager
+import androidx.work.WorkerParameters
+import com.google.android.gms.ads.AdError
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.FullScreenContentCallback
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
+
+LockScreenStateManager.kt:
+import android.content.Context
+import android.util.Log
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.core.edit
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.withContext
+
+LockService.kt:
+import android.app.Activity
+import android.app.Application
+import android.app.admin.DeviceAdminReceiver
+import android.app.admin.DevicePolicyManager
+import android.content.BroadcastReceiver
+import android.content.ComponentName
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
+import android.os.Bundle
+import com.viperdam.kidsprayer.PrayerApp
+import com.viperdam.kidsprayer.state.LockScreenStateManager
